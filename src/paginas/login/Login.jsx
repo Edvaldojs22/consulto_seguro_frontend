@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 
 export default function Login() {
 
+  
 
     const [usuario, setUsuario] = useState('');
     const [senha, setSenha] = useState('');
@@ -52,5 +53,8 @@ export default function Login() {
 
 
     )
+    
 
 }   
+export{Logo}
+

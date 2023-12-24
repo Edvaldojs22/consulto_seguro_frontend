@@ -3,6 +3,8 @@ import { FaCircleUser } from "react-icons/fa6";
 import { LuMenu } from "react-icons/lu";
 import { CiSearch } from "react-icons/ci";
 import { IoFilterSharp } from "react-icons/io5";
+import {Logo} from './../login/Login.jsx'
+import Cliente from './Cliente.jsx';
 
 export default function Associados() {
     return (
@@ -24,8 +26,45 @@ export default function Associados() {
             <div className='caixa-inpunt-pesquisa'>
                 <IoFilterSharp className='icon-filter' />
                 <input id='inpunt-pesquisa' type="text" placeholder='Pesquisar cliente' />
-                <CiSearch className='icon-search' />
+                <button type='submit' className='botao-pesquisa'>  <CiSearch className='icon-search' /></button>
+               
             </div>
+
+            <div className="caixa-lista-associados">
+                <div className="lista-associados">
+                    <Cliente />
+                    <Cliente />
+                    <Cliente />
+                    <Cliente />
+                    <Cliente />
+                    <Cliente />
+                    <Cliente />
+                    <Cliente />
+                    <Cliente />
+                    <Cliente />
+                    <Cliente />
+                    <Cliente />
+                    <Cliente />
+                    <Cliente />
+                    <Cliente />
+                    <Cliente />
+                    <Cliente />
+                    <Cliente />
+                    <Cliente />
+                    <Cliente />
+                    <Cliente />
+                    <Cliente />
+                    <Cliente />
+                    <Cliente />
+                    <Cliente />
+                    <Cliente />
+                    <Cliente />
+                </div>
+            </div>
+
+            <footer>
+               
+            </footer>
 
         </div>
     )

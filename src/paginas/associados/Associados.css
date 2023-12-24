@@ -1,6 +1,3 @@
-.associados {
-    height: 100vh;
-}
 
 header {
     height: 80px;
@@ -44,7 +41,7 @@ header p {
     height: 100vh;
     background-color: rgb(196, 196, 196);
     z-index: 1;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -79,6 +76,12 @@ header p {
     border: none;
     background-image: linear-gradient(to left, #024F70 20%, #CAC6C6 20%);
     border-radius: 20px;
+    outline: none;
+    text-align: center;
+}
+
+.botao-pesquisa{
+    border: none;
 }
 
 .icon-search,
@@ -101,3 +104,37 @@ header p {
 #inpunt-pesquisa::placeholder {
     text-align: center;
 }
+
+
+
+.caixa-lista-associados{
+    width: calc(100% - 10%);
+    max-width: 1000px;
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    overflow-y: auto;
+    border-radius: 10px;
+}
+
+
+.lista-associados{
+    width:calc(100%);
+    max-width: 1000px;
+    height :2000px;
+    background-color: #B8534D;
+  
+}
+
+footer{
+    height: 80px;
+    width: 100%;
+    background-color: #024F70;
+    position: fixed;
+    bottom: 0;
+}
+
+
+
+
