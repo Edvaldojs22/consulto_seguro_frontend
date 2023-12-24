@@ -1,0 +1,103 @@
+.associados {
+    height: 100vh;
+}
+
+header {
+    height: 80px;
+    background-color: #024F70;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.painel-icon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+}
+
+.icon-user {
+    font-size: 50px;
+}
+
+header p {
+    color: #F8F4F4;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.icon-menu {
+    position: fixed;
+    font-size: 50px;
+    right: 10px;
+    top: 13px;
+    cursor: pointer;
+}
+
+.caixa-menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: rgb(196, 196, 196);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.caixa-menu p {
+    width: 70%;
+    height: 40px;
+    background-color: #B8534D;
+    color: #F8F4F4;
+    border-radius: 10px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.caixa-inpunt-pesquisa {
+    width: calc(100% - 20%);
+    max-width: 700px;
+    margin: 20px auto;
+    position: relative;
+
+}
+
+#inpunt-pesquisa {
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-image: linear-gradient(to left, #024F70 20%, #CAC6C6 20%);
+    border-radius: 20px;
+}
+
+.icon-search,
+.icon-filter {
+    position: absolute;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.icon-filter {
+    top: 10px;
+    left: 13px;
+}
+
+.icon-search {
+    top: 10px;
+    right: 13px;
+}
+
+#inpunt-pesquisa::placeholder {
+    text-align: center;
+}
