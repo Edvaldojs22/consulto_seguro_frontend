@@ -25,42 +25,6 @@ header p {
     font-family: sans-serif;
 }
 
-.icon-menu {
-    position: fixed;
-    font-size: 50px;
-    right: 10px;
-    top: 13px;
-    cursor: pointer;
-}
-
-.caixa-menu {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 200px;
-    height: 100vh;
-    background-color: rgb(196, 196, 196);
-    z-index: 1;
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-
-.caixa-menu p {
-    width: 70%;
-    height: 40px;
-    background-color: #B8534D;
-    color: #F8F4F4;
-    border-radius: 10px;
-    font-size: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: sans-serif;
-    font-weight: 600;
-}
 
 .caixa-inpunt-pesquisa {
     width: calc(100% - 20%);
@@ -110,9 +74,9 @@ header p {
 .caixa-lista-associados{
     width: calc(100% - 10%);
     max-width: 1000px;
-    height: 400px;
     margin: 0 auto;
     display: flex;
+    height: 700px;
     justify-content: center;
     overflow-y: auto;
     border-radius: 10px;
@@ -122,7 +86,7 @@ header p {
 .lista-associados{
     width:calc(100%);
     max-width: 1000px;
-    height :2000px;
+    height :3000px;
     background-color: #B8534D;
   
 }
@@ -133,7 +97,65 @@ footer{
     background-color: #024F70;
     position: fixed;
     bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: solid 20px white;
 }
+
+
+.botao-novoCliente{
+    width: 100px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background-color: #B8534D;
+    border-radius: 7px;
+    color: #f2f2f2;
+    font-weight: bold;
+}
+
+.botao-novoCliente:active{
+    transform: scale(0.97);
+    background-color: #027aae;
+}
+
+
+
+.caixa-cliente{
+    border-bottom: 1px solid #0118228f;
+    padding: 10px 20px 10px 10px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+
+.iconUser-cliente{
+    display: inline-block;
+    font-size: 45px;
+    margin-right: 20px;
+}
+
+.numero-cpf{
+    display: inline-block;
+    margin-right: 4.3vw;
+    color: aliceblue;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.numero-cpf p{
+    margin-bottom: 8px;
+}
+
+.fone{
+    padding-top: 17px;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    color: aliceblue;
+}
+
 
 
 
