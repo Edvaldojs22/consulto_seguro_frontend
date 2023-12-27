@@ -49,6 +49,10 @@
     font-weight: bold;
 }
 
+.caixa-menu p:hover{
+    background-color: #027aae;
+}
+
 .caixa-menu p:active{
     transform: scale(0.97);
     background-color: #027aae;

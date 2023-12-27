@@ -1,5 +1,4 @@
 import './Associados.css';
-import { FaUser } from "react-icons/fa";
 import { FaCircleUser } from "react-icons/fa6";
 import { CiSearch } from "react-icons/ci";
 import { IoFilterSharp } from "react-icons/io5";
@@ -7,10 +6,11 @@ import Menu from '../menu/Menu.jsx';
 import { useState } from 'react';
 
 
-export default function Associados() {
+
+export default function Associados({ nomePesquisa, icon}) {
 
 
-    const [termoPesquisa, setTermoPesquisa] = useState ('');
+    const [termoPesquisa, setTermoPesquisa] = useState('');
 
     const listaCliente = [
         {
@@ -109,6 +109,8 @@ export default function Associados() {
             cpf: "678.901.234-55",
             telefone: "666777888"
         },
+
+
         {
             id: 17,
             nome: "Bruno",
@@ -168,14 +170,14 @@ export default function Associados() {
         {
             id: 26,
             nome: "biel",
-            cpf:"00000000",
-            telefone:"232232323"
+            cpf: "00000000",
+            telefone: "232232323"
 
         }
     ];
 
     const clientesFiltrados = listaCliente.filter(cliente =>
-        cliente.nome.toLocaleLowerCase().includes(termoPesquisa.toLocaleLowerCase())  ||
+        cliente.nome.toLocaleLowerCase().includes(termoPesquisa.toLocaleLowerCase()) ||
         cliente.cpf.includes(termoPesquisa)
     );
 
@@ -200,7 +202,7 @@ export default function Associados() {
 
             <div className='caixa-inpunt-pesquisa'>
                 <IoFilterSharp className='icon-filter' />
-                <input id='inpunt-pesquisa' type="text" placeholder='Pesquisar cliente'
+                <input id='inpunt-pesquisa' type="text" placeholder={nomePesquisa}
                     value={termoPesquisa}
                     onChange={pesquisaInpunt} />
                 <button type='submit' className='botao-pesquisa'>  <CiSearch className='icon-search' /></button>
@@ -213,7 +215,10 @@ export default function Associados() {
                     {clientesFiltrados.map(cliente => (
 
                         <div key={cliente.id} className="caixa-cliente">
-                            <FaUser className="iconUser-cliente" />
+                            <div className='icon-user'>
+                                {icon}
+                            </div>
+
                             <div className="numero-cpf">
                                 <p>{cliente.nome}</p>
                                 <p> CPF :{cliente.cpf}</p>
