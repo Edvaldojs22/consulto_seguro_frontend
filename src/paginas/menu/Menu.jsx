@@ -1,7 +1,7 @@
 import { LuMenu } from "react-icons/lu";
 import './Menu.css';
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function Menu() {
 
@@ -21,7 +21,6 @@ export default function Menu() {
         setMenuAberto(false)
     }
 
-    console.log(navigate)
 
     const caixaMenuClasses = 'caixa-menu ' + (menuAberto ? 'caixa-menuAberta' : '');
 

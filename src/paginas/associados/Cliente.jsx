@@ -1,16 +1,6 @@
-import './Associados.css';
-import { FaCircleUser } from "react-icons/fa6";
-import { CiSearch } from "react-icons/ci";
-import { IoFilterSharp } from "react-icons/io5";
-import Menu from '../menu/Menu.jsx';
-import { useState } from 'react';
-import { useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom"
 
-export default function Associados({nomePesquisa, icon}) {
-
-
-
-    const [termoPesquisa, setTermoPesquisa] = useState('');
+export default function Cliente(){
 
     const listaCliente = [
         {
@@ -176,72 +166,25 @@ export default function Associados({nomePesquisa, icon}) {
         }
     ];
 
-    const clientesFiltrados = listaCliente.filter(cliente =>
-        cliente.nome.toLocaleLowerCase().includes(termoPesquisa.toLocaleLowerCase()) ||
-        cliente.cpf.includes(termoPesquisa)
-    );
+    const {id} = useParams();
+    const clienteSelecionado = listaCliente.find(cliente => cliente.id.toString()=== id);
 
-    const pesquisaInpunt = (e) => {
-        setTermoPesquisa(e.target.value);
+    if(!clienteSelecionado){
+
+        return(
+            <div>
+                <h1>cliente não selecioandao</h1>
+            </div>
+        )
     }
 
-    const navigate = useNavigate();
-
-    const pageAssociado = (rota) =>{
-        navigate(rota);
-    }
+    return(
+        <div>
+        <h1>Página do Cliente {clienteSelecionado.nome}</h1>
+        <p>CPF: {clienteSelecionado.cpf}</p>
+        <p>Telefone: {clienteSelecionado.telefone}</p>
+    </div>
+    )
 
    
-
-
-
-    return (
-        <div className='associados'>
-
-            <Menu />
-
-            <header>
-                <div className='painel-icon'>
-                    <FaCircleUser className='icon-user' />
-                    <p>huhjh khuhgy</p>
-                </div>
-            </header>
-
-            <div className='caixa-inpunt-pesquisa'>
-                <IoFilterSharp className='icon-filter' />
-                <input id='inpunt-pesquisa' type="text" placeholder={nomePesquisa}
-                    value={termoPesquisa}
-                    onChange={pesquisaInpunt} />
-                <button type='submit' className='botao-pesquisa'>  <CiSearch className='icon-search' /></button>
-
-            </div>
-
-            <div className="caixa-lista-associados">
-                <div className="lista-associados">
-
-                    {clientesFiltrados.map(cliente => (
-
-                        <div key={cliente.id} onClick={() => pageAssociado(`/Cliente/${cliente.id}`)} className="caixa-cliente">
-                            <div className='icon-user'>
-                                {icon}
-                            </div>
-
-                            <div className="numero-cpf">
-                                <p>{cliente.nome}</p>
-                                <p> CPF :{cliente.cpf}</p>
-                            </div>
-                            <p className="fone">N: {cliente.telefone}</p>
-                        </div>
-
-                    ))}
-
-                </div>
-            </div>
-
-            <footer>
-                <button className='botao-novoCliente'>Novo Cliente</button>
-            </footer>
-
-        </div>
-    )
 }

@@ -5,7 +5,7 @@ export default function Veiculos (){
     
     return(
         <div>
-        <Associados nomePesquisa="Pesquisa veiculo" icon="🚙" cpf="cliente.cpf" />
+        <Associados nomePesquisa="Pesquisa veiculo" icon="🚙" />
         </div>
     )
 }
