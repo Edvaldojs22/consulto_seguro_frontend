@@ -17,6 +17,7 @@ header {
     font-size: 50px;
     display: inline-block;
     margin-right: 20px;
+    color: black;
 }
 
 header p {
@@ -97,6 +98,42 @@ header p {
 
 }
 
+.caixa-cliente {
+    border-bottom: 1px solid #0118228f;
+    padding: 10px 20px 10px 10px;
+    font-family: sans-serif;
+    cursor: pointer;
+    display: block;
+}
+
+
+.iconUser-cliente {
+    display: inline-block;
+    font-size: 45px;
+    margin-right: 20px;
+   
+}
+
+.numero-cpf {
+    display: inline-block;
+    margin-right: 4.3vw;
+    color: aliceblue;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.numero-cpf p {
+    margin-bottom: 8px;
+}
+
+.fone {
+    padding-top: 17px;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    color: aliceblue;
+}
+
 footer {
     height: 80px;
     width: 100%;
@@ -132,36 +169,3 @@ footer {
 
 
 
-.caixa-cliente {
-    border-bottom: 1px solid #0118228f;
-    padding: 10px 20px 10px 10px;
-    font-family: sans-serif;
-    cursor: pointer;
-}
-
-
-.iconUser-cliente {
-    display: inline-block;
-    font-size: 45px;
-    margin-right: 20px;
-}
-
-.numero-cpf {
-    display: inline-block;
-    margin-right: 4.3vw;
-    color: aliceblue;
-    font-size: 12px;
-    font-weight: 600;
-}
-
-.numero-cpf p {
-    margin-bottom: 8px;
-}
-
-.fone {
-    padding-top: 17px;
-    display: inline-block;
-    font-size: 12px;
-    font-weight: 600;
-    color: aliceblue;
-}

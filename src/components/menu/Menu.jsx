@@ -1,7 +1,7 @@
 import { LuMenu } from "react-icons/lu";
 import './Menu.css';
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Menu() {
 
@@ -30,11 +30,11 @@ export default function Menu() {
     return (
         <div>
             <LuMenu className='icon-menu' onClick={ativaMenu} />
-            <div className={caixaMenuClasses}>
-                <p onClick={() => navigateTo("/associados")}>Associado</p>
-                <p onClick={() => navigateTo("/veiculos")}>Veículo</p>
-                <p onClick={() => navigateTo("/contrato")}>Contrato</p>
-            </div>
+            <nav className={caixaMenuClasses}>
+                <Link to="/associados" className="link">Associados</Link>
+                <Link to="/veiculos" className="link">Veiculos</Link>
+                <Link to="/contratos" className="link">Contratos</Link>
+            </nav>
 
         </div>
     )
