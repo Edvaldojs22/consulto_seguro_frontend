@@ -5,7 +5,7 @@ import Associados from './router/associados/Associados.jsx';
 import Contrato from './router/contratro/Contrato.jsx';
 import Veiculos from './router/veiculos/Veiculos.jsx';
 import Login from './router/login/Login.jsx';
-import { FaUser } from "react-icons/fa";
+
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ClienteInfo from './router/clienteInfo/ClienteInfo.jsx';
@@ -17,15 +17,15 @@ const router = createBrowserRouter([
   },
   {
     path: "associados",
-    element: <Associados nomePesquisa="Pesquisa Cliente" icon={<FaUser />} />,
+    element: <Associados/>,
   },
   {
     path: "veiculos",
-    element: <Veiculos nomePesquisa="Pesquisa Veiculo" />,
+    element: <Veiculos />,
   },
   {
     path: "contratos",
-    element: <Contrato nomePesquisa="Pesquisa Contrato" />
+    element: <Contrato />
   },
   {
     path: "/cliente/:id",

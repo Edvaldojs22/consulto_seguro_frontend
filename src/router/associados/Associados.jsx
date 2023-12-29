@@ -1,5 +1,5 @@
 import './Associados.css';
-import { FaCircleUser } from "react-icons/fa6";
+import { FaCircleUser, FaUser } from "react-icons/fa6";
 import { CiSearch } from "react-icons/ci";
 import { IoFilterSharp } from "react-icons/io5";
 import Menu from '../../components/menu/Menu.jsx';
@@ -172,7 +172,7 @@ export  const listaCliente = [
 
 
 
-export default function Associados({nomePesquisa, icon}) {
+export default function Associados() {
 
     const [termoPesquisa, setTermoPesquisa] = useState('');
 
@@ -202,7 +202,7 @@ export default function Associados({nomePesquisa, icon}) {
 
             <div className='caixa-inpunt-pesquisa'>
                 <IoFilterSharp className='icon-filter' />
-                <input id='inpunt-pesquisa' type="text" placeholder={nomePesquisa}
+                <input id='inpunt-pesquisa' type="text" placeholder="Pesquisa Cliente"
                     value={termoPesquisa}
                     onChange={pesquisaInpunt} />
                 <button type='submit' className='botao-pesquisa'>  <CiSearch className='icon-search' /></button>
@@ -217,7 +217,7 @@ export default function Associados({nomePesquisa, icon}) {
                         <Link key={cliente.id} to={`/cliente/${cliente.id}`} className="caixa-cliente">
                             
                             <div className='icon-user'>
-                                {icon}
+                                <FaUser />
                             </div>
 
                             <div className="numero-cpf">
@@ -233,7 +233,7 @@ export default function Associados({nomePesquisa, icon}) {
             </div>
 
             <footer>
-                <button className='botao-novoCliente'>Novo Cliente</button>
+                <button className='botao-novoCliente'>Add+ Cliente</button>
             </footer>
 
         </div>
