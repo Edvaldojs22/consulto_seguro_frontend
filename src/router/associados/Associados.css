@@ -98,12 +98,16 @@ header p {
 
 }
 
-.caixa-cliente {
+.caixa-listaAssociados{
     border-bottom: 1px solid #0118228f;
     padding: 10px 20px 10px 10px;
     font-family: sans-serif;
     cursor: pointer;
     display: block;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 12px;
+    font-weight: 600;
 }
 
 
@@ -111,19 +115,17 @@ header p {
     display: inline-block;
     font-size: 45px;
     margin-right: 20px;
-   
+
 }
 
-.numero-cpf {
+.nome-cpf {
     display: inline-block;
     margin-right: 4.3vw;
-    color: aliceblue;
-    font-size: 12px;
-    font-weight: 600;
+
 }
 
-.numero-cpf p {
-    margin-bottom: 8px;
+.nome-cpf p {
+    margin-bottom: 10px;
 }
 
 .fone {
@@ -166,6 +168,3 @@ footer {
     transform: scale(0.97);
     background-color: #027aae;
 }
-
-
-

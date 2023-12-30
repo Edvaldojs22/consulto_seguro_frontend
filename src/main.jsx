@@ -2,13 +2,15 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import Associados from './router/associados/Associados.jsx';
-import Contrato from './router/contratro/Contrato.jsx';
 import Veiculos from './router/veiculos/Veiculos.jsx';
 import Login from './router/login/Login.jsx';
 
 
+
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import ClienteInfo from './router/clienteInfo/ClienteInfo.jsx';
+import ClienteInfo from './router/associados/AssociadoInfo.jsx';
+import VeiculoInfo from './router/veiculos/VeiculoInfo.jsx';
+
 
 const router = createBrowserRouter([
   {
@@ -17,19 +19,19 @@ const router = createBrowserRouter([
   },
   {
     path: "associados",
-    element: <Associados/>,
+    element: <Associados />,
+  },
+  {
+    path: "/associado/:id",
+    element: <ClienteInfo />
   },
   {
     path: "veiculos",
-    element: <Veiculos />,
+    element: <Veiculos/>,
   },
   {
-    path: "contratos",
-    element: <Contrato />
-  },
-  {
-    path: "/cliente/:id",
-    element: <ClienteInfo />
+    path: "/veiculo/:id",
+    element: <VeiculoInfo />
   }
 
 ])

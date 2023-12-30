@@ -172,7 +172,7 @@ export  const listaCliente = [
 
 
 
-export default function Associados() {
+export default function AssociadosInfo() {
 
     const [termoPesquisa, setTermoPesquisa] = useState('');
 
@@ -196,7 +196,7 @@ export default function Associados() {
             <header>
                 <div className='painel-icon'>
                     <FaCircleUser className='icon-user' />
-                    <p>huhjh khuhgy</p>
+                    <p>José Leandro</p>
                 </div>
             </header>
 
@@ -214,15 +214,15 @@ export default function Associados() {
 
                     {clientesFiltrados.map(cliente => (
 
-                        <Link key={cliente.id} to={`/cliente/${cliente.id}`} className="caixa-cliente">
+                        <Link key={cliente.id} to={`/associado/${cliente.id}`} className="caixa-listaAssociados">
                             
                             <div className='icon-user'>
                                 <FaUser />
                             </div>
 
-                            <div className="numero-cpf">
+                            <div className="nome-cpf">
                                 <p>{cliente.nome}</p>
-                                <p> CPF :{cliente.cpf}</p>
+                                <p> CPF: {cliente.cpf}</p>
                             </div>
                             <p className="fone">N: {cliente.telefone}</p>
                         </Link>
@@ -233,7 +233,7 @@ export default function Associados() {
             </div>
 
             <footer>
-                <button className='botao-novoCliente'>Add+ Cliente</button>
+                <button className='botao-novoCliente'>Novo Cliente</button>
             </footer>
 
         </div>
