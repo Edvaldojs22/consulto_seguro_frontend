@@ -1,12 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
+import "./App.css"
 import Associados from './router/associados/Associados.jsx';
 import Veiculos from './router/veiculos/Veiculos.jsx';
 import Login from './router/login/Login.jsx';
-
-
-
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ClienteInfo from './router/associados/AssociadoInfo.jsx';
 import VeiculoInfo from './router/veiculos/VeiculoInfo.jsx';
@@ -27,7 +24,7 @@ const router = createBrowserRouter([
   },
   {
     path: "veiculos",
-    element: <Veiculos/>,
+    element: <Veiculos />,
   },
   {
     path: "/veiculo/:id",
@@ -35,7 +32,6 @@ const router = createBrowserRouter([
   }
 
 ])
-
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
