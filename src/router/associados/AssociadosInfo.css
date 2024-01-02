@@ -1,0 +1,102 @@
+.caixa {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.iconUserInfo {
+    font-size: 70px;
+    margin: 20px 0 20px 0;
+
+}
+
+.caixaInfos {
+    width: calc(100% - 10%);
+    max-width: 700px;
+    height: 480px;
+    background-color: #024F70;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    gap: 15px;
+   
+}
+
+.caixaInfos h1,
+h2 {
+    color: white;
+    font-size: 20px;
+    margin: 15px 0;
+    font-family: sans-serif;
+ 
+}
+
+h2 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+
+.caixaInfos div {
+    width: calc(100% - 20%);
+    font-size: 12px;
+    position: relative;
+}
+
+.caixaInfos div::after {
+    position: absolute;
+    content: '';
+    width: calc(102%);
+    height: 2px;
+    border-radius: 50%px;
+    background-color: rgb(13, 0, 0);
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -2px;
+}
+
+p {
+    color: white;
+  
+  
+}
+
+span {
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    
+}
+
+
+.caixa-doisP p {
+    display: inline-block;
+}
+
+.caixa-doisP p:first-child {
+    margin-right: 23px;
+}
+
+.caixa-pessoaFisica {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.butao-aditar{
+    margin-top: 15px;
+    padding: 10px 30px;
+    border: none;
+    background-color: #B8534D;
+    color: white;
+    border-radius: 3px;
+    font-weight: 600;
+
+}

@@ -8,21 +8,27 @@
     font-size: 12px;
     font-weight: 600;
     padding: 8px;
+    position: relative;
 }
 
 .icon-cart {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
     width: 60px;
     display: inline-block;
-    margin-right: 10px;
 }
 
 .nome-placa {
-    font-size: 10px;
-    display: inline-block;
-    height: 40px;
-    vertical-align: top;
-    margin-top: 25px;
-    margin-right: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 40px 0 20px 0;
+}
+.nome-placa span{
+    font-size: 12px;
+    
 }
 
 .nome-placa p {
@@ -33,16 +39,11 @@
     margin-right: 10px;
 }
 
-.nome-placa span {
-    font-size: 10px;
-}
-
-
 .cor {
     text-align: center;
     font-size: 10px;
 }
 
 .cor span {
-    font-size: 11px;
+    font-size: 12px;
 }
