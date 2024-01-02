@@ -56,15 +56,19 @@ header p {
 }
 
 .icon-search,
-.icon-filter {
+.number {
     position: absolute;
     font-size: 30px;
     cursor: pointer;
 }
 
-.icon-filter {
+.number {
     top: 10px;
     left: 13px;
+    font-size: 26px;
+    font-family: sans-serif;
+    color: #024F70;
+    font-weight: 700;
 }
 
 .icon-search {
@@ -98,7 +102,7 @@ header p {
 
 }
 
-.caixa-listaAssociados{
+.caixa-listaAssociados {
     border-bottom: 1px solid #0118228f;
     padding: 10px 20px 10px 10px;
     font-family: sans-serif;
@@ -106,9 +110,10 @@ header p {
     display: block;
     text-decoration: none;
     color: aliceblue;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 600;
 }
+
 
 
 .iconUser-cliente {
@@ -120,20 +125,26 @@ header p {
 
 .nome-cpf {
     display: inline-block;
-    margin-right: 4.3vw;
+    margin-right: 30px;
+}
 
+.nome-cpf p:first-child {
+    font-size: 12px;
 }
 
 .nome-cpf p {
     margin-bottom: 10px;
 }
 
-.fone {
-    padding-top: 17px;
+.fone-vencimento {
     display: inline-block;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 600;
     color: aliceblue;
+}
+
+.fone-vencimento p:first-child {
+    margin-bottom: 10px;
 }
 
 footer {

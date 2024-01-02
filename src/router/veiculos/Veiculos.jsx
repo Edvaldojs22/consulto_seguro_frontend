@@ -1,6 +1,5 @@
 import { FaCircleUser } from "react-icons/fa6";
 import Menu from "../../components/menu/Menu";
-import { IoFilterSharp } from "react-icons/io5";
 import { CiSearch } from "react-icons/ci";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -211,7 +210,6 @@ export default function Veiculos() {
       </header>
 
       <div className='caixa-inpunt-pesquisa'>
-        <IoFilterSharp className='icon-filter' />
         <input id='inpunt-pesquisa' type="text" placeholder="Pesquisa Veiculo"
           value={termoPesquisa}
           onChange={pesquisaInpunt} />
