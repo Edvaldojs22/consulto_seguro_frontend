@@ -65,10 +65,10 @@ input::placeholder{
     left: 10px;
 }
 
-.botao{
+.botao-login{
     width: 200px;
     height: 40px;
-    border-radius: 10px;
+    border-radius: 7px;
     border: none;
     background-color: #B8534D;
     color: #013043;
@@ -76,9 +76,15 @@ input::placeholder{
     font-size: 18px;
     font-weight: 700;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: sans-serif;
 }
 
-.botao:active{
+
+.botao-login:active{
     background-color: #03161e;
     color: white;
     transition: 0.3s;

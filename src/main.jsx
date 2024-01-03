@@ -10,24 +10,24 @@ import VeiculoInfo from './router/veiculos/VeiculoInfo.jsx';
 
 
 const router = createBrowserRouter([
-  {
-    path: "/",
+   {
+    path: "/consulto_seguro/",
     element: <Login />,
   },
   {
-    path: "associados",
+    path: "/consulto_seguro/associados",
     element: <Associados />,
   },
   {
-    path: "/associado/:id",
+    path: "/consulto_seguro/associado/:id",
     element: <ClienteInfo />
   },
   {
-    path: "veiculos",
+    path: "/consulto_seguro/veiculos",
     element: <Veiculos />,
   },
   {
-    path: "/veiculo/:id",
+    path: "/consulto_seguro/veiculo/:id",
     element: <VeiculoInfo />
   }
 

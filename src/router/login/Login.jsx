@@ -2,6 +2,7 @@ import './Login.css';
 import Logo from '../../assets/img/logo.png'
 import { FaUser, FaLock } from "react-icons/fa";
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 
 export default function Login() {
@@ -19,14 +20,7 @@ export default function Login() {
         setSenha(event.target.value);
     }
 
-    const fazerLogin = () => {
-
-        if (usuario == 'edvaldo' && senha == 'edvaldo123') {
-            alert('Login bem-sucedido')
-        } else {
-            alert('usuario ou senha invalido');
-        }
-    }
+  
 
     return (
 
@@ -47,7 +41,10 @@ export default function Login() {
                     <input className='senha ' type="password" placeholder='Senha:' value={senha} onChange={senhaOnchange} />
                 </div>
 
-                <button onClick={fazerLogin} className='botao' type='submit'>LOGIN</button>
+                <Link className='botao-login' to="/consulto_seguro/associados">
+                <p>LOGIN</p>
+                </Link>
+              
 
             </div>
 
