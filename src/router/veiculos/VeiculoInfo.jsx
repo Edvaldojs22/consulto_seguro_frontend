@@ -1,6 +1,8 @@
-import { useParams } from "react-router-dom"
-
+import { useParams } from "react-router-dom";
 import { listaVeiculos } from "./Veiculos";
+import LogoCart from "../../assets/img/car.png";
+import "./VeiculoInfo.css"
+
 
 export default function VeiculoInfo() {
 
@@ -10,10 +12,58 @@ export default function VeiculoInfo() {
 
 
     return (
-        <div>
-            <h1>Veiculo</h1>
-            <h1>Veiculo: {veiculoSelecionado.nome}</h1>
-            <p>Placa: {veiculoSelecionado.placa}</p>
+        <div className="caixa">
+            <img src={LogoCart} alt="" />
+            <div className="caixaInfos">
+
+                <h1>Dados Básicos</h1>
+                <div className="caixa-doisP">
+                    <p><span>Placa :</span> {veiculoSelecionado.placa}</p>
+                    <p><span>Renavam :</span> {veiculoSelecionado.renavam}</p>
+                </div>
+                <div className="caixa-doisP">
+                    <p><span>Chassi :</span> {veiculoSelecionado.chassi}</p>
+                    <p><span>Cor :</span> {veiculoSelecionado.cor}</p>
+                </div>
+                <div className="caixa-doisP">
+                    <p><span>Ano Fabricação :</span> {veiculoSelecionado.anoFabricacao}</p>
+                    <p><span>Alienado :</span> {veiculoSelecionado.alienado}</p>
+                </div>
+                <div><p><span>Proprietario:</span> {veiculoSelecionado.proprietario}</p> </div>
+                <div><p><span>Documentação:</span> {veiculoSelecionado.documentacao}</p> </div>
+                <div className="caixa-doisP">
+                    <p><span>UF :</span> {veiculoSelecionado.uf}</p>
+                    <p><span>Cidade :</span> {veiculoSelecionado.cidade}</p>
+                </div>
+
+
+
+                <h2>Dados do Veículo</h2>
+                <div className="caixa-doisP">
+                    <p><span>Tipo de Veículo :</span> {veiculoSelecionado.tipoVeiculo}</p>
+                    <p><span>Marca :</span> {veiculoSelecionado.marca}</p>
+                </div>
+
+                <div className="caixa-doisP">
+                    <p><span>Modelo :</span> {veiculoSelecionado.modelo}</p>
+                    <p><span>Ano do Modelo :</span> {veiculoSelecionado.modeloAno}</p>
+                </div>
+
+                <div className="caixa-doisP">
+                    <p><span>Combustivel :</span> {veiculoSelecionado.combustivel}</p>
+                    <p><span>Codigo FIPE :</span> {veiculoSelecionado.codigoFipe}</p>
+                </div>
+
+
+                <div className="valor"> <p>
+                    <span>VALOR :</span>
+                    <span>R$ </span> {veiculoSelecionado.valor}</p>
+                </div>
+
+
+
+            </div>
+            <button className="butao-aditar">Editar</button>
         </div>
     )
 }

@@ -4,6 +4,9 @@ import { CiSearch } from "react-icons/ci";
 import Menu from '../../components/menu/Menu.jsx';
 import { useState } from 'react';
 import { Link } from "react-router-dom";
+import LogoFone from "../../assets/img/phone-call.png";
+import RodaPe from '../../components/menu/RodaPe.jsx';
+
 
 export const listaCliente = [
     {
@@ -423,14 +426,14 @@ export const listaCliente = [
         estadoCivil: "Casado",
         dataNascimento: "1985-05-15"
     },
-    
+
 ];
 
 
 
 export default function AssociadosInfo() {
 
-  
+
 
     const [termoPesquisa, setTermoPesquisa] = useState('');
 
@@ -484,10 +487,10 @@ export default function AssociadosInfo() {
                             </div>
 
                             <div className="fone-vencimento">
-                            <p>Vencimento: Dia {cliente.vencimento}</p>
-                            <p >N: {cliente.telefone}</p>
+                                <p>Vencimento: Dia {cliente.vencimento}</p>
+                                <p> <img className='logoFone' src={LogoFone} alt="" />: {cliente.telefone}</p>
                             </div>
-                           
+
                         </Link>
 
                     ))}
@@ -495,10 +498,8 @@ export default function AssociadosInfo() {
                 </div>
             </div>
 
-            <footer>
-                <button className='botao-novoCliente'>Novo Cliente</button>
-            </footer>
-
+            <button className='botao-novoCliente'>Novo</button>
+            <RodaPe />
         </div>
     )
 

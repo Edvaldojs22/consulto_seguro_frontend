@@ -1,5 +1,5 @@
 import './Login.css';
-import Logo from '../../assets/img/logo.png'
+import Logo from '../../assets/img/autoPlanos.png'
 import { FaUser, FaLock } from "react-icons/fa";
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 export default function Login() {
 
-  
+
 
     const [usuario, setUsuario] = useState('');
     const [senha, setSenha] = useState('');
@@ -20,12 +20,12 @@ export default function Login() {
         setSenha(event.target.value);
     }
 
-  
+
 
     return (
 
         <div className='app'>
-            
+        
 
             <img src={Logo} alt="" />
 
@@ -39,12 +39,23 @@ export default function Login() {
                 <div className='caixaInpunt'>
                     <FaLock className='lock' />
                     <input className='senha ' type="password" placeholder='Senha:' value={senha} onChange={senhaOnchange} />
+
+                    {/* <div className='caixa-salvar'>
+                        <div className='box'>
+                            
+                        </div>
+                        <div>
+                            <p>Lembrar</p>
+                        </div>
+                    </div> */}
+
                 </div>
 
+
                 <Link className='botao-login' to="/consulto_seguro/associados">
-                <p>LOGIN</p>
+                    <p>LOGIN</p>
                 </Link>
-              
+
 
             </div>
 
@@ -52,8 +63,8 @@ export default function Login() {
 
 
     )
-    
 
-}   
-export{Logo}
+
+}
+export { Logo }
 

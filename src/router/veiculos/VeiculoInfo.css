@@ -1,0 +1,12 @@
+.caixa img{
+    width: 100px;
+    margin: 10px 0;
+}
+.valor {
+   display: flex;
+   justify-content: center;
+}
+
+.valor span:nth-child(2){
+    color:#44A906;
+}
