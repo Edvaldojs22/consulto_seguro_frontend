@@ -1,6 +1,6 @@
 import { FaCircleUser } from "react-icons/fa6";
 import Menu from "../../components/menu/Menu";
-import { CiSearch } from "react-icons/ci";
+import { IoPersonAddSharp } from "react-icons/io5";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import LogoCart from '../../assets/img/carBlack.png';
@@ -532,7 +532,7 @@ export default function Veiculos() {
         <input id='inpunt-pesquisa' type="text" placeholder="Pesquisa Veiculo"
           value={termoPesquisa}
           onChange={pesquisaInpunt} />
-        <button type='submit' className='botao-pesquisa'>  <CiSearch className='icon-search' /></button>
+        <button type='submit' className='botao-pesquisa'> <IoPersonAddSharp className='icon-search' /> </button>
 
       </div>
 
@@ -556,8 +556,6 @@ export default function Veiculos() {
 
         </div>
       </div>
-
-      <button className='botao-novoCliente'>Novo</button>
       <RodaPe />
 
     </div>

@@ -100,5 +100,10 @@ span {
     box-shadow: 0 3px 7px 0 black;
     font-size: 18px;
     font-weight: 700;
+}
 
+.butao-aditar:hover{
+    background-color: #204285;
+    transform: scale(0.9);
+    cursor: pointer;
 }

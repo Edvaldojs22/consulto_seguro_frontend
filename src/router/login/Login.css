@@ -23,19 +23,21 @@
     width: calc(100% - 10%);
     max-width: 400px;
     height: 400px;
-    background-color: #f9f9f99e;
+    background-color: #f9f9f953;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 45px;
-  
+    margin-bottom: 100px;
+    
 }
 
 .caixaInpunt {
     width: calc(100% - 10%);
     position: relative;
+   
 
 }
 
@@ -50,6 +52,7 @@
     position: relative;
     font-weight: bold;
     font-size: 17px;
+    outline: none;
 }
 
 
@@ -60,7 +63,6 @@ input::placeholder {
     text-align: start;
     font-weight: bold;
     font-size: 15px;
-
 }
 
 
@@ -98,8 +100,8 @@ input::placeholder {
 }
 
 .botao-login {
-    width: 200px;
-    height: 40px;
+    width: 180px;
+    height: 50px;
     border-radius: 7px;
     border: none;
     background-color: #d31e25;
@@ -114,6 +116,11 @@ input::placeholder {
     text-decoration: none;
     font-family: sans-serif;
     box-shadow: 0 3px 7px 0 black;
+}
+
+.botao-login:hover{
+    background-color: #204285;
+    transform: scale(0.9);
 }
 
 

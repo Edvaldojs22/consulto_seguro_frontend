@@ -1,6 +1,6 @@
 import './Associados.css';
 import { FaCircleUser, FaUser } from "react-icons/fa6";
-import { CiSearch } from "react-icons/ci";
+import { IoPersonAddSharp } from "react-icons/io5";
 import Menu from '../../components/menu/Menu.jsx';
 import { useState } from 'react';
 import { Link } from "react-router-dom";
@@ -462,11 +462,12 @@ export default function AssociadosInfo() {
             </header>
 
             <div className='caixa-inpunt-pesquisa'>
+
                 <p className='number'>{clientesFiltrados.length}</p>
                 <input id='inpunt-pesquisa' type="text" placeholder="Pesquisa Cliente"
                     value={termoPesquisa}
                     onChange={pesquisaInpunt} />
-                <button type='submit' className='botao-pesquisa'>  <CiSearch className='icon-search' /></button>
+                <button type='submit' className='botao-pesquisa'> <IoPersonAddSharp className='icon-search' /> </button>
 
             </div>
 
@@ -498,7 +499,6 @@ export default function AssociadosInfo() {
                 </div>
             </div>
 
-            <button className='botao-novoCliente'>Novo</button>
             <RodaPe />
         </div>
     )

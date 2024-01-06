@@ -58,9 +58,7 @@ header p {
     border: none;
 }
 
-.icon-search{
-    
-}
+
 
 .icon-search,
 .number {
@@ -79,8 +77,12 @@ header p {
 }
 
 .icon-search {
-    top: 10px;
-    right: 13px;
+    top: 8px;
+    right: 18px;
+    color:white;
+    font-size: 35px;
+    cursor: pointer;
+
 }
 
 #inpunt-pesquisa::placeholder {
@@ -121,7 +123,6 @@ header p {
     font-weight: 600;
  
 }
-
 
 
 .iconUser-cliente {
@@ -165,28 +166,3 @@ header p {
     margin-right: 2px;
 }
 
-
-.botao-novoCliente {
-    position: fixed;
-    bottom: 74px;
-    right: 4px;
-    width: 70px;
-    height: 50px;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    background-color: #204285;
-    z-index: 1;
-    color: white;
-    font-size: 14px;
-    font-weight: 600;
-}
-
-.botao-novoCliente:hover {
-    background-color: #027aae;
-}
-
-.botao-novoCliente:active {
-    transform: scale(0.97);
-    background-color: #027aae;
-}
