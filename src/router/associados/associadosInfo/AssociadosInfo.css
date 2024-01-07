@@ -57,7 +57,7 @@ h2 {
     content: '';
     width: calc(102%);
     height: 1px;
-    border-radius: 50%px;
+    border-radius: 50%;
     background-color: rgb(13, 0, 0);
     left: 50%;
     transform: translate(-50%);

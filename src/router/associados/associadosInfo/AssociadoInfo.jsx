@@ -1,9 +1,9 @@
 import { useParams } from "react-router-dom"
 import './AssociadosInfo.css'
-import { listaCliente } from "./Associados";
-import { FaCircle, FaCircleUser } from "react-icons/fa6";
+import { listaCliente } from "../../associados/associado/Associados";
+import { FaCircleUser } from "react-icons/fa6";
 
-export default function ClienteInfo() {
+export default function AssociadosInfo() {
 
     const { id } = useParams();
     const clientSelecionados = listaCliente.find(cliente => cliente.id.toString() === id)

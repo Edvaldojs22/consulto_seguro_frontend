@@ -1,12 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import "./App.css"
-import Associados from './router/associados/Associados.jsx';
+import Associados from './router/associados/associado/Associados.jsx'
 import Veiculos from './router/veiculos/Veiculos.jsx';
 import Login from './router/login/Login.jsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import ClienteInfo from './router/associados/AssociadoInfo.jsx';
+import AssociadosInfo from './router/associados/associadosInfo/AssociadoInfo.jsx';
 import VeiculoInfo from './router/veiculos/VeiculoInfo.jsx';
+import NovoAssociado from './router/associados/addAssociado/NovoAssociado.jsx';
 
 
 const router = createBrowserRouter([
@@ -16,11 +17,15 @@ const router = createBrowserRouter([
   },
   {
     path: "/consulto_seguro/associados",
-    element: <Associados />,
+    element:<Associados />,
+  },
+  {
+    path: "/consulto_seguro/NovoAssociado",
+    element: <NovoAssociado />
   },
   {
     path: "/consulto_seguro/associado/:id",
-    element: <ClienteInfo />
+    element: <AssociadosInfo />
   },
   {
     path: "/consulto_seguro/veiculos",

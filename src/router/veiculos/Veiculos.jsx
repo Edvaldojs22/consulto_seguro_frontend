@@ -5,7 +5,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import LogoCart from '../../assets/img/carBlack.png';
 import './Veiculo.css';
-import RodaPe from "../../components/menu/RodaPe";
+import RodaPe from "../../components/rodaPe/RodaPe";
 
 export const listaVeiculos = [
   {

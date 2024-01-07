@@ -1,11 +1,11 @@
 import './Associados.css';
 import { FaCircleUser, FaUser } from "react-icons/fa6";
 import { IoPersonAddSharp } from "react-icons/io5";
-import Menu from '../../components/menu/Menu.jsx';
+import Menu from '../../../components/menu/Menu.jsx';
 import { useState } from 'react';
 import { Link } from "react-router-dom";
-import LogoFone from "../../assets/img/phone-call.png";
-import RodaPe from '../../components/menu/RodaPe.jsx';
+import LogoFone from "../../../assets/img/phone-call.png";
+import RodaPe from "../../../components/rodaPe/RodaPe.jsx";
 
 
 export const listaCliente = [
@@ -431,7 +431,7 @@ export const listaCliente = [
 
 
 
-export default function AssociadosInfo() {
+export default function Associados() {
 
 
 
@@ -467,7 +467,9 @@ export default function AssociadosInfo() {
                 <input id='inpunt-pesquisa' type="text" placeholder="Pesquisa Cliente"
                     value={termoPesquisa}
                     onChange={pesquisaInpunt} />
-                <button type='submit' className='botao-pesquisa'> <IoPersonAddSharp className='icon-search' /> </button>
+                <button type='submit' className='botao-pesquisa'>
+                    <Link to="/consulto_seguro/NovoAssociado"><IoPersonAddSharp className='icon-search' /></Link>
+                </button>
 
             </div>
 
