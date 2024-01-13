@@ -7,9 +7,13 @@
   
 }
 
-form .userAdd{
+.userAdd{
     font-size: 70px;
     margin: 20px auto;
+    color: #d31e25;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    
     
 }
 .arrow{
@@ -21,7 +25,7 @@ form .userAdd{
     font-size: 18px;
 }
 
-form {
+ .formAssociado{
     margin-top: 20px;
     margin-bottom: 20px;
     width: calc(100% - 5%);
@@ -44,7 +48,7 @@ label{
     margin-bottom: 25px;
 }
 
-form h1{
+.formAssociado h1{
     margin-bottom: 30px;
     color: white;
 }
@@ -63,7 +67,7 @@ form h1{
 
 
 
-form input {
+.formAssociado input {
     background-color: transparent;
     margin-bottom: 10px;
     width: 260px;
@@ -78,7 +82,7 @@ form input {
 }
 
 
-form span {
+.formAssociado span {
     font-size: 19px;
     width: 140px;
     color: rgb(0, 0, 0);
@@ -138,7 +142,7 @@ form span {
 
 
 
-form button {
+.formAssociado button {
     padding: 10px 30px;
     border: none;
     background-color: #d31e25;
@@ -151,6 +155,8 @@ form button {
     cursor: pointer;
 }
 
-form button:hover{
+.formAssociado button:hover{
     transform: scale(0.9);
 }
+
+

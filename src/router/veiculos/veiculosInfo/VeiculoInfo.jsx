@@ -1,10 +1,18 @@
-import { useParams } from "react-router-dom";
-import { listaVeiculos } from "./Veiculos";
-import LogoCart from "../../assets/img/car.png";
+import { Link, useParams } from "react-router-dom";
+import { listaVeiculos } from "../veiculos/Veiculos";
+import LogoCart from "../../../assets/img/car.png";
 import "./VeiculoInfo.css"
+import { IoIosArrowBack } from "react-icons/io";
+import { useState } from "react";
 
 
 export default function VeiculoInfo() {
+
+    const [mostraBotao, setMostraBotao] = useState('false');
+
+    const handeClick = () => {
+       setMostraBotao(!mostraBotao);
+   }
 
     const { id } = useParams();
     console.log(id);
@@ -60,10 +68,17 @@ export default function VeiculoInfo() {
                     <span>R$ </span> {veiculoSelecionado.valor}</p>
                 </div>
 
+                <button className="botaoSalvar" style={{display: mostraBotao ? 'none' : 'flex'}} >Salvar</button>
 
 
             </div>
-            <button className="butao-aditar">Editar</button>
+            <div className="botao-arrow">
+                <button className="butao-aditar" onClick={handeClick}>Editar</button>
+                <Link to="/consulto_seguro/veiculos">
+                    <IoIosArrowBack className="arrowVolta" />
+                </Link>
+
+            </div>
         </div>
     )
 }

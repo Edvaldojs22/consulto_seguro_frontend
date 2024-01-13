@@ -452,7 +452,7 @@ export default function Associados() {
     return (
         <div className='associados'>
 
-            <Menu />
+            <Menu  />
 
             <header>
                 <div className='painel-icon'>

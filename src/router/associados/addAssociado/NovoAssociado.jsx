@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './NovoAssociado.css';
 import { FaCircleUser } from "react-icons/fa6";
 import { useEffect } from 'react';
-import { FaLongArrowAltRight } from "react-icons/fa";
+import RodaPeAdd from '../../../components/rodaPe/RodaPeAdd';
 
 
 export default function NovoAssociado() {
@@ -32,8 +32,7 @@ export default function NovoAssociado() {
 
     return (
         <div className="caixaForm">
-
-            <form >
+            <form className="formAssociado" >
                 <FaCircleUser className='userAdd' />
                 <h1>Dados Básicos</h1>
                 <section className='dadosBasicos' >
@@ -151,15 +150,9 @@ export default function NovoAssociado() {
                     </section>
                 )}
 
-
-
-
-
-
-
                 <button type='submit' className="botao-salvar">Salvar</button>
             </form>
-
+            <RodaPeAdd />
         </div>
 
 

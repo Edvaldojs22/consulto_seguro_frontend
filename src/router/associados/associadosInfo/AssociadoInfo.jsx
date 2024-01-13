@@ -1,9 +1,18 @@
-import { useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import './AssociadosInfo.css'
 import { listaCliente } from "../../associados/associado/Associados";
 import { FaCircleUser } from "react-icons/fa6";
+import { IoIosArrowBack } from "react-icons/io";
+import { useState } from "react";
+
 
 export default function AssociadosInfo() {
+
+    const [mostraBotao, setMostraBotao] = useState('false');
+
+     const handeClick = () => {
+        setMostraBotao(!mostraBotao);
+    }
 
     const { id } = useParams();
     const clientSelecionados = listaCliente.find(cliente => cliente.id.toString() === id)
@@ -48,12 +57,28 @@ export default function AssociadosInfo() {
                     </section>
                 }
 
-                <div className="dataNascimento"> <p><span>DATA NASCIMENTO :</span> {clientSelecionados.dataNascimento}</p></div>
+                <div className="dataNascimento">
+                    <p>
+                        <span>DATA NASCIMENTO :</span>
+                        {clientSelecionados.dataNascimento}
+                    </p>
 
-              
+
+                </div>
+
+               <button className="botaoSalvar" style={{display: mostraBotao ? 'none' : 'flex'}} >Salvar</button>
+
 
             </div>
-            <button className="butao-aditar">Editar</button>
+            <div className="botao-arrow">
+                <button className="butao-aditar" onClick={handeClick}>Editar</button>
+                <Link to="/consulto_seguro/associados">
+                    <IoIosArrowBack className="arrowVolta" />
+                </Link>
+
+            </div>
+
+
         </div>
 
     )

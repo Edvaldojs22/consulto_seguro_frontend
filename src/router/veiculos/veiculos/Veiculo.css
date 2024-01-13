@@ -9,6 +9,21 @@
     font-weight: 600;
     padding: 8px;
     position: relative;
+    background-color: #d31e25;
+}
+
+.botao-pesquisa img{
+    width: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 5px;
+    background-color: #204285;
+    height: 50px;
+    width: 60px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
 }
 
 .icon-cart {

@@ -1,11 +1,11 @@
 import { FaCircleUser } from "react-icons/fa6";
-import Menu from "../../components/menu/Menu";
-import { IoPersonAddSharp } from "react-icons/io5";
+import Menu from "../../../components/menu/Menu";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import LogoCart from '../../assets/img/carBlack.png';
+import LogoCart from '../../../assets/img/carBlack.png';
 import './Veiculo.css';
-import RodaPe from "../../components/rodaPe/RodaPe";
+import RodaPe from "../../../components/rodaPe/RodaPe";
+import LogoCarAdd from "../../../assets/img/carAdd.png"
 
 export const listaVeiculos = [
   {
@@ -514,7 +514,6 @@ export default function Veiculos() {
   }
 
 
-
   return (
     <div className='associados'>
 
@@ -532,7 +531,11 @@ export default function Veiculos() {
         <input id='inpunt-pesquisa' type="text" placeholder="Pesquisa Veiculo"
           value={termoPesquisa}
           onChange={pesquisaInpunt} />
-        <button type='submit' className='botao-pesquisa'> <IoPersonAddSharp className='icon-search' /> </button>
+        <button type='submit' className='botao-pesquisa'>
+          <Link to="/consulto_seguro/NovoVeiculo">
+            <img src={LogoCarAdd} alt="" />
+          </Link>
+        </button>
 
       </div>
 

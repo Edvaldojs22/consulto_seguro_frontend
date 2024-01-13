@@ -3,11 +3,12 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    height: 100vh;
 }
 
 .iconUserInfo {
     font-size: 70px;
-    margin: 10px 0 10px 0;
+    margin: 0 0 10px 0;
     color: #d31e25;
 }
 
@@ -22,9 +23,10 @@
     align-items: center;
     font-family: sans-serif;
     gap: 15px;
+    position: relative;
 }
 
-.caixaInfos p{
+.caixaInfos p {
     font-size: 13px;
     color: white;
     font-weight: bold;
@@ -36,7 +38,7 @@ h2 {
     font-size: 20px;
     margin: 15px 0;
     font-family: sans-serif;
- 
+
 }
 
 h2 {
@@ -70,7 +72,7 @@ span {
     color: black;
     font-size: 13px;
     font-weight: 700;
-    
+
 }
 
 
@@ -90,7 +92,50 @@ span {
     gap: 15px;
 }
 
-.butao-aditar{
+.botaoSalvar{
+    padding: 5px 15px;
+    border: none;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: 700; 
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+}
+
+.botaoSalvar:hover{
+    background-color:#d31e25;
+    color: white;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+.botao-arrow {
+    position: relative;
+}
+
+
+.arrowVolta {
+    width: 40px;
+    height: 40px;
+    background-color: #d31e25;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: -100px;
+    bottom: 0;
+
+
+}
+
+.arrowVolta:hover {
+    transform: scale(1.1);
+}
+
+.butao-aditar {
     margin-top: 15px;
     padding: 10px 30px;
     border: none;
@@ -102,8 +147,8 @@ span {
     font-weight: 700;
 }
 
-.butao-aditar:hover{
+.butao-aditar:hover {
     background-color: #204285;
-    transform: scale(0.9);
+    transform: scale(1.1);
     cursor: pointer;
 }

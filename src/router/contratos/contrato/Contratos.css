@@ -1,0 +1,83 @@
+.caixa-lista-contratos{
+    width: calc(100% - 10%);
+    max-width: 1000px;
+    height: 50vh;
+    max-height: 700px;
+    min-height: 100px;
+    overflow-y: auto;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.caixa-listaContratos{
+    border-bottom: 1px solid #0118228f;
+    font-family: sans-serif;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 8px;
+    position: relative;
+}
+
+.icon-document{
+    color: black;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 40px;
+    display: inline-block;
+}
+
+.lista-contratos .nomeAssociado{
+    text-align: center;
+    font-size: 12px;
+    vertical-align: top;
+    margin-top: 50px;
+    
+}
+
+.lista-contratos div{
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 40px;
+
+}
+
+.corContrato{
+    background: green;
+} 
+
+
+.caixa-eventos{
+    width: 330px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.caixa-eventos p{
+    padding: 9px;
+    border-radius: 7px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 14px;
+}
+
+.caixa-eventos p:nth-child(1){
+    background-color: rgb(17, 155, 17);
+}
+
+.caixa-eventos p:nth-child(2){
+    background-color: rgb(17, 75, 155);
+}
+
+.caixa-eventos p:nth-child(3){
+    background-color: rgb(155, 40, 17);
+}

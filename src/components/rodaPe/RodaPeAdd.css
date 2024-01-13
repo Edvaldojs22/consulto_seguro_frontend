@@ -1,16 +1,13 @@
-.rodaPe {
+.rodaPeAdd {
     height: 90px;
     width: 100%;
     background-color: #204285;
-    position: fixed;
     bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.rodaPe img{
+.rodaPeAdd img{
     width: 150px;
 }
-
-

@@ -1,0 +1,136 @@
+.caixaForm img {
+    width: 120px;
+    margin: 20px auto;
+}
+
+
+.formVeiculo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: calc(100% - 5%);
+    max-width: 900px;
+    background-color: #ffffff2b;
+    border-radius: 10px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.formVeiculo section {
+    margin-bottom: 30px;
+}
+
+.formVeiculo h1 {
+    margin-bottom: 30px;
+}
+
+
+.placaRenavm,
+.chassiAno,
+.anoCor,
+.alienadoCategoria,
+.propietarioDocument,
+.ufCidade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formVeiculo input {
+    background-color: transparent;
+    margin-bottom: 10px;
+    width: 260px;
+    margin-right: 10px;
+    border: none;
+    border-bottom: solid 1px black;
+    outline: none;
+    color: white;
+    font-size: 2vh;
+    text-align: center;
+    font-size: 18px;
+}
+
+select {
+    background-color: transparent;
+    margin-bottom: 10px;
+    width: 260px;
+    margin-right: 10px;
+    border: none;
+    border-bottom: solid 1px black;
+    outline: none;
+    font-size: 2vh;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+
+}
+
+option {
+   color: white;
+    background-color: #204285;
+}
+
+
+
+.dadosVeiculo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dadosVeiculo div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.caixa-money {
+    position: relative;
+}
+
+
+.caixa-money input::placeholder {
+    text-align: center;
+}
+
+.iconMoney {
+    position: absolute;
+    left: 0;
+    bottom: 13px;
+    font-size: 30px;
+    background-color: rgb(8, 198, 8);
+    border-radius: 3px;
+    color: white;
+}
+
+
+textarea {
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    outline: none;
+    text-align: center;
+}
+
+.formVeiculo button {
+    padding: 10px 30px;
+    border: none;
+    background-color: #d31e25;
+    color: white;
+    border-radius: 7px;
+    box-shadow: 0 3px 7px 0 black;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.formVeiculo button:hover {
+    transform: scale(0.9);
+}
