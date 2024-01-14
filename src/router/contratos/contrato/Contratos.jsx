@@ -164,7 +164,7 @@ export default function Contratos() {
                             <IoDocumentText className="icon-document" />
                             <p className="nomeAssociado">{veiculo.associado}</p>
 
-                            <div>
+                            <div className="vencimentoPlano">
                                 <p>Vencimento dia : {veiculo.diaVencimento}</p>
                                 <p>Plano: {veiculo.valorPlano}</p>
                             </div>
