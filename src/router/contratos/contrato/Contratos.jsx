@@ -4,7 +4,8 @@ import { FaCircleUser } from "react-icons/fa6";
 import Menu from "../../../components/menu/Menu";
 import { useState } from "react";
 import { IoDocumentText } from "react-icons/io5";
-import "./Contratos.css"
+import "./Contratos.css";
+import { HiDocumentAdd } from "react-icons/hi";
 
 
 export const listaContratos = [
@@ -16,7 +17,7 @@ export const listaContratos = [
         renovarContrato: "05/01/2025",
         tipoContrato: "FILIAÇÃO",
         associado: "BRUNO HERIQUE DE OLIVEIRA LIMA - 11852278498",
-        veiculo: "RZU6J83 - R$ 10.374,00",
+        contrato: "RZU6J83 - R$ 10.374,00",
         plano: "AG - MOTOCICLETA PLANO BASICO 08 - 2022 De R$ 11.000,00",
         diaVencimento: "10",
         modeloFinanceiro: "CARNÊ",
@@ -33,7 +34,7 @@ export const listaContratos = [
         renovarContrato: "15/02/2025",
         tipoContrato: "FILIAÇÃO",
         associado: "CARLA SILVA - 22876543210",
-        veiculo: "ABC1234 - R$ 15.000,00",
+        contrato: "ABC1234 - R$ 15.000,00",
         plano: "AG - MOTOCICLETA PLANO PREMIUM 10 - 2022 De R$ 18.000,00",
         diaVencimento: "20",
         modeloFinanceiro: "CARNÊ",
@@ -50,7 +51,7 @@ export const listaContratos = [
         renovarContrato: "10/03/2025",
         tipoContrato: "FILIAÇÃO",
         associado: "MARCOS OLIVEIRA - 33221144556",
-        veiculo: "XYZ9876 - R$ 12.500,00",
+        contrato: "XYZ9876 - R$ 12.500,00",
         plano: "AG - MOTOCICLETA PLANO INTERMEDIÁRIO 05 - 2022 De R$ 14.000,00",
         diaVencimento: "30",
         modeloFinanceiro: "CARNÊ",
@@ -67,7 +68,7 @@ export const listaContratos = [
         renovarContrato: "22/04/2025",
         tipoContrato: "FILIAÇÃO",
         associado: "PATRICIA SANTOS - 55667788990",
-        veiculo: "MNO4321 - R$ 14.200,00",
+        contrato: "MNO4321 - R$ 14.200,00",
         plano: "AG - MOTOCICLETA PLANO PREMIUM 12 - 2022 De R$ 16.000,00",
         diaVencimento: "10",
         modeloFinanceiro: "CARNÊ",
@@ -84,7 +85,7 @@ export const listaContratos = [
         renovarContrato: "15/05/2025",
         tipoContrato: "FILIAÇÃO",
         associado: "FABIANA PEREIRA - 99887766554",
-        veiculo: "PQR5678 - R$ 16.800,00",
+        contrato: "PQR5678 - R$ 16.800,00",
         plano: "AG - MOTOCICLETA PLANO INTERMEDIÁRIO 09 - 2022 De R$ 18.000,00",
         diaVencimento: "20",
         modeloFinanceiro: "CARNÊ",
@@ -101,7 +102,7 @@ export const listaContratos = [
         renovarContrato: "08/06/2025",
         tipoContrato: "FILIAÇÃO",
         associado: "GUSTAVO ALVES - 11223344556",
-        veiculo: "LMN9012 - R$ 19.500,00",
+        contrato: "LMN9012 - R$ 19.500,00",
         plano: "AG - MOTOCICLETA PLANO PREMIUM 15 - 2022 De R$ 22.000,00",
         diaVencimento: "30",
         modeloFinanceiro: "CARNÊ",
@@ -120,9 +121,9 @@ export default function Contratos() {
     const [termoPesquisa, setTermoPesquisa] = useState('');
 
 
-    const contratosFiltrados = listaContratos.filter(veiculo =>
-        veiculo.diaVencimento.toLocaleLowerCase().includes(termoPesquisa.toLocaleLowerCase()) ||
-        veiculo.valorPlano.includes(termoPesquisa) || veiculo.associado.toLocaleLowerCase().includes(termoPesquisa)
+    const contratosFiltrados = listaContratos.filter(contrato =>
+        contrato.diaVencimento.toLocaleLowerCase().includes(termoPesquisa.toLocaleLowerCase()) ||
+        contrato.valorPlano.includes(termoPesquisa) || contrato.associado.toLocaleLowerCase().includes(termoPesquisa)
     );
 
     const pesquisaInpunt = (e) => {
@@ -135,7 +136,8 @@ export default function Contratos() {
 
             <Menu />
 
-        <header>
+
+            <header>
                 <div className='painel-icon'>
                     <FaCircleUser className='icon-user' />
                     <p>José Leandro</p>
@@ -145,11 +147,11 @@ export default function Contratos() {
             <div className='caixa-inpunt-pesquisa'>
 
                 <p className='number'>{contratosFiltrados.length}</p>
-                <input id='inpunt-pesquisa' type="text" placeholder="Pesquisa veiculo"
+                <input id='inpunt-pesquisa' type="text" placeholder="Pesquisa contrato"
                     value={termoPesquisa}
                     onChange={pesquisaInpunt} />
                 <button type='submit' className='botao-pesquisa'>
-                    <Link to="/consulto_seguro/NovoAssociado"><IoDocumentText className='icon-search' /></Link>
+                    <Link to="/consulto_seguro/NovoContrato"> <HiDocumentAdd className='icon-search' /></Link>
                 </button>
 
             </div>
@@ -157,16 +159,16 @@ export default function Contratos() {
             <div className="caixa-lista-contratos">
                 <div className="lista-contratos">
 
-                    {contratosFiltrados.map(veiculo => (
+                    {contratosFiltrados.map(contrato => (
 
-                        <Link key={veiculo.id} to={`/consulto_seguro/associado/${veiculo.id}`} className="caixa-listaContratos corContrato">
+                        <Link key={contrato.id} to={`/consulto_seguro/contrato/${contrato.id}`} className="caixa-listaContratos corContrato">
 
                             <IoDocumentText className="icon-document" />
-                            <p className="nomeAssociado">{veiculo.associado}</p>
+                            <p className="nomeAssociado">{contrato.associado}</p>
 
                             <div className="vencimentoPlano">
-                                <p>Vencimento dia : {veiculo.diaVencimento}</p>
-                                <p>Plano: {veiculo.valorPlano}</p>
+                                <p>Vencimento dia : {contrato.diaVencimento}</p>
+                                <p>Plano: {contrato.valorPlano}</p>
                             </div>
 
 

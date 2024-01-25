@@ -1,0 +1,167 @@
+.regionalVendedor,
+.data-TipoContrato,
+.contaVencimentoModelo,
+.valoresPCDM,
+.AssociadoVeiculo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+select{
+    cursor: pointer;
+}
+select option{
+     cursor: pointer;
+}
+
+.data-TipoContrato{
+    margin-bottom: 50px;
+}
+
+.document{
+    color: #d31e25;
+    font-size: 80px;
+}
+
+.formContrato {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: calc(100% - 5%);
+    max-width: 900px;
+    background-color: #ffffff2b;
+    border-radius: 10px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.formContrato input {
+    background-color: transparent;
+    margin-bottom: 10px;
+    width: 260px;
+    margin-right: 10px;
+    border: none;
+    border-bottom: solid 1px black;
+    outline: none;
+    color: white;
+    font-size: 2vh;
+    text-align: center;
+    font-size: 18px;
+}
+
+#campoRegional::placeholder{
+    text-align: center;
+    color: white;
+}
+
+.formContrato label {
+    margin-top: 10px;
+    
+}
+
+.dadosValores {
+    margin-top: 0;
+}
+
+#campoValorPlano::placeholder {
+    text-align: center;
+}
+
+#campoCoberturasAdicionais::placeholder {
+    text-align: center;
+}
+
+#campoDescontoMensalidade::placeholder {
+    text-align: center;
+}
+
+#campoValorMensalidade::placeholder {
+    text-align: center;
+}
+
+.formContrato button {
+    padding: 10px 30px;
+    border: none;
+    background-color: #d31e25;
+    color: white;
+    border-radius: 7px;
+    box-shadow: 0 3px 7px 0 black;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+
+.formContrato button:hover {
+    transform: scale(0.9);
+}
+
+.AssociadoVeiculo {
+    position: relative;
+}
+
+.AssociadoVeiculo label{
+    font-size: 20px;
+}
+.dadosAssociadoVeiculo{
+   background-color: rgba(255, 255, 255, 0.283);
+   border: solid 1px;
+   border-radius: 10px;
+   padding: 0 30px;
+   height: 430px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-top: 50px;
+}
+
+.add {
+    position: absolute;
+    background-color: green;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: sans-serif;
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    right: 10px;
+    bottom: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add:hover{
+    background-color: rgb(1, 105, 1);
+    transform: scale(1.1);
+}
+
+.caixaClienteInpunt {
+    background-color: transparent;
+    width: 100%;
+    border-radius: 5px;
+    overflow-y: auto;
+    height: 80px;
+    font-size: 15px;
+}
+
+.caixaScrollCliente {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.caixaScrollCliente p {
+    font-weight: 600;
+    cursor: pointer;
+}

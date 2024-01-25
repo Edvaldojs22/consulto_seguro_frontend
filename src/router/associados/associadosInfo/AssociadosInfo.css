@@ -93,20 +93,21 @@ span {
 }
 
 .botaoSalvar{
-    padding: 5px 15px;
+    padding: 8px 25px;
     border: none;
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
+    background-color: #d31e25;
+    color: white;
     border-radius: 7px;
+    box-shadow: 0 3px 7px 0 black;
     font-size: 18px;
-    font-weight: 700; 
+    font-weight: 700;
     position: absolute;
-    right: 10px;
-    bottom: 5px;
+    right: 0;
+    bottom: -55px;
 }
 
 .botaoSalvar:hover{
-    background-color:#d31e25;
+    background-color:#204285;
     color: white;
     transform: scale(1.1);
     cursor: pointer;

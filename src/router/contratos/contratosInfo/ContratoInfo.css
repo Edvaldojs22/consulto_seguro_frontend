@@ -1,0 +1,122 @@
+.caixaContratos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.iconDocument {
+    font-size: 60px;
+    margin: 9px 0;
+}
+
+.dadosBasicosContrato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.caixaInfosContratos {
+    width: calc(100% - 5%);
+    max-width: 700px;
+    background-color: #204285;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    gap: 10px;
+    position: relative;
+    font-size: 12px;
+    color: white;
+}
+
+.caixaInfosContratos h1 {
+    margin-top: 20px;
+}
+
+.caixaInfosContratos span {
+    width: 160px;
+    font-size: 14px;
+    font-weight: 600;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translate(-50%);
+   
+}
+
+.caixaInfosContratos p {
+    position: relative;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.RV {
+    margin-top: 25px;
+    margin-right: 40px;
+    display: flex;
+}
+
+
+.RV P:nth-child(1) {
+    margin-right: 20PX;
+}
+
+
+.ID {
+    display: flex;
+}
+
+.ID P:nth-child(1) {
+    margin-right: 80px;
+}
+
+.dadosValores {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.CD,
+.MV,
+.CA {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.CD{
+    margin-right: 25px;
+}
+
+
+.CD p {
+    display: inline-block;
+}
+
+.CD p:nth-child(1) {
+    margin-right: 120px;
+}
+
+.MV p:nth-child(1) {
+    margin-right: 120px;
+}
+
+
+.CA p:nth-child(1) {
+    margin-right: 150px;
+}
+
+.observacao{
+    margin-bottom: 20px;
+}
+.observacao p {
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+}
+
