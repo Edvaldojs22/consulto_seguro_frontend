@@ -532,7 +532,7 @@ export default function Veiculos() {
           value={termoPesquisa}
           onChange={pesquisaInpunt} />
         <button type='submit' className='botao-pesquisa'>
-          <Link to="/NovoVeiculo">
+          <Link to="/veiculos/novoVeiculos">
             <img src={LogoCarAdd} alt="" />
           </Link>
         </button>

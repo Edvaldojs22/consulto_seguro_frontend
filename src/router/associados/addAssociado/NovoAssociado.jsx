@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './NovoAssociado.css';
+import './associados/novoAssociado.css';
 import { FaCircleUser } from "react-icons/fa6";
 import { useEffect } from 'react';
 import RodaPeAdd from '../../../components/rodaPe/RodaPeAdd';

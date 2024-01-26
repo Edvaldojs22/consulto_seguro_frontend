@@ -468,7 +468,7 @@ export default function Associados() {
                     value={termoPesquisa}
                     onChange={pesquisaInpunt} />
                 <button type='submit' className='botao-pesquisa'>
-                    <Link to="/NovoAssociado"><IoPersonAddSharp className='icon-search' /></Link>
+                    <Link to="/associados/novoAssociado"><IoPersonAddSharp className='icon-search' /></Link>
                 </button>
 
             </div>

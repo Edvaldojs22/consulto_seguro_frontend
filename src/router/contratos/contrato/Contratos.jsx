@@ -151,7 +151,7 @@ export default function Contratos() {
                     value={termoPesquisa}
                     onChange={pesquisaInpunt} />
                 <button type='submit' className='botao-pesquisa'>
-                    <Link to="/NovoContrato"> <HiDocumentAdd className='icon-search' /></Link>
+                    <Link to="/contratos/novoContrato"> <HiDocumentAdd className='icon-search' /></Link>
                 </button>
 
             </div>
