@@ -74,7 +74,7 @@ export default function ContratosInfo() {
             </div>
             <div className="botao-arrow">
                 <button className="butao-aditar" onClick={handeClick}>Editar</button>
-                <Link to="/consulto_seguro/contratos">
+                <Link to="/contratos">
                     <IoIosArrowBack className="arrowVolta" />
                 </Link>
 

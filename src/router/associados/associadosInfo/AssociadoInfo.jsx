@@ -72,7 +72,7 @@ export default function AssociadosInfo() {
             </div>
             <div className="botao-arrow">
                 <button className="butao-aditar" onClick={handeClick}>Editar</button>
-                <Link to="/consulto_seguro/associados">
+                <Link to="/associados">
                     <IoIosArrowBack className="arrowVolta" />
                 </Link>
 

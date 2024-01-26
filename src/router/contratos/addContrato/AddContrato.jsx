@@ -110,7 +110,7 @@ export default function AddContrato() {
                         {/* Associado-------------------------------------------- */}
                         <div className="AssociadoVeiculo">
                             <label htmlFor="campoAssociado">Associado</label>
-                            <Link to={"/consulto_seguro/NovoAssociado"} className="add">
+                            <Link to={"/NovoAssociado"} className="add">
                                 +
                             </Link>
                             <input type="text" id="campoAssociado" value={inputValue} onChange={handleInputChange} required />
@@ -130,7 +130,7 @@ export default function AddContrato() {
                         {/* Veiculo--------------------------------------------------- */}
                         <div className="AssociadoVeiculo">
                             <label htmlFor="campoVeiculo">Veiculo</label>
-                            <Link to={"/consulto_seguro/NovoVeiculo"} className="add">
+                            <Link to={"/NovoVeiculo"} className="add">
                                 +
                             </Link>
                             <input type="text" id="campoVeiculo" value={inputValue2} onChange={handleInputChange2} required />

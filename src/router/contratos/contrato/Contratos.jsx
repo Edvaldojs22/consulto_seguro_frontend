@@ -151,7 +151,7 @@ export default function Contratos() {
                     value={termoPesquisa}
                     onChange={pesquisaInpunt} />
                 <button type='submit' className='botao-pesquisa'>
-                    <Link to="/consulto_seguro/NovoContrato"> <HiDocumentAdd className='icon-search' /></Link>
+                    <Link to="/NovoContrato"> <HiDocumentAdd className='icon-search' /></Link>
                 </button>
 
             </div>
@@ -161,7 +161,7 @@ export default function Contratos() {
 
                     {contratosFiltrados.map(contrato => (
 
-                        <Link key={contrato.id} to={`/consulto_seguro/contrato/${contrato.id}`} className="caixa-listaContratos corContrato">
+                        <Link key={contrato.id} to={`/contrato/${contrato.id}`} className="caixa-listaContratos corContrato">
 
                             <IoDocumentText className="icon-document" />
                             <p className="nomeAssociado">{contrato.associado}</p>

@@ -17,43 +17,43 @@ import AddContrato from './router/contratos/addContrato/AddContrato.jsx';
 
 const router = createBrowserRouter([
   {
-    path: "/consulto_seguro/",
+    path: "/",
     element: <Login />,
   },
   {
-    path: "/consulto_seguro/associados",
+    path: "/associados",
     element: <Associados />,
   },
   {
-    path: "/consulto_seguro/associado/:id",
+    path: "/associado/:id",
     element: <AssociadosInfo />
   },
   {
-    path: "/consulto_seguro/NovoAssociado",
+    path: "/NovoAssociado",
     element: <NovoAssociado />
   },
   {
-    path: "/consulto_seguro/veiculos",
+    path: "/veiculos",
     element: <Veiculos />,
   },
   {
-    path: "/consulto_seguro/veiculo/:id",
+    path: "/veiculo/:id",
     element: <VeiculoInfo />
   },
   {
-    path: "/consulto_seguro/NovoVeiculo",
+    path: "/NovoVeiculo",
     element: <NovoVeiculo />
   },
   {
-    path: "/consulto_seguro/contratos",
+    path: "/contratos",
     element: <Contratos />
   },
   {
-    path: "/consulto_seguro/contrato/:id",
+    path: "/contrato/:id",
     element: <ContratoInfo />
   },
   {
-    path: "/consulto_seguro/NovoContrato",
+    path: "/NovoContrato",
     element: <AddContrato />
   }
 

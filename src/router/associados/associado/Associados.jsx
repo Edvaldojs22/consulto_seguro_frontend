@@ -468,7 +468,7 @@ export default function Associados() {
                     value={termoPesquisa}
                     onChange={pesquisaInpunt} />
                 <button type='submit' className='botao-pesquisa'>
-                    <Link to="/consulto_seguro/NovoAssociado"><IoPersonAddSharp className='icon-search' /></Link>
+                    <Link to="/NovoAssociado"><IoPersonAddSharp className='icon-search' /></Link>
                 </button>
 
             </div>
@@ -478,7 +478,7 @@ export default function Associados() {
 
                     {clientesFiltrados.map(cliente => (
 
-                        <Link key={cliente.id} to={`/consulto_seguro/associado/${cliente.id}`} className="caixa-listaAssociados">
+                        <Link key={cliente.id} to={`/associado/${cliente.id}`} className="caixa-listaAssociados">
 
                             <div className='icon-user'>
                                 <FaUser />

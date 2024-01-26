@@ -532,7 +532,7 @@ export default function Veiculos() {
           value={termoPesquisa}
           onChange={pesquisaInpunt} />
         <button type='submit' className='botao-pesquisa'>
-          <Link to="/consulto_seguro/NovoVeiculo">
+          <Link to="/NovoVeiculo">
             <img src={LogoCarAdd} alt="" />
           </Link>
         </button>
@@ -543,7 +543,7 @@ export default function Veiculos() {
         <div className="lista-associados">
 
           {veiculosFiltrados.map(veiculo => (
-            <Link key={veiculo.id} to={`/consulto_seguro/veiculo/${veiculo.id}`} className="caixa-listaVeiculos">
+            <Link key={veiculo.id} to={`/veiculo/${veiculo.id}`} className="caixa-listaVeiculos">
 
 
               <img className="icon-cart" src={LogoCart} alt="" />

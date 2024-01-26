@@ -33,9 +33,9 @@ export default function Menu() {
         <div>
             <LuMenu className='icon-menu' onClick={ativaMenu} />
             <nav className={caixaMenuClasses}>
-                <Link to="/consulto_seguro/associados" className="link">Associados</Link>
-                <Link to="/consulto_seguro/veiculos" className="link">Veiculos</Link>
-                <Link to="/consulto_seguro/contratos" className="link">Contratos</Link>
+                <Link to="/associados" className="link">Associados</Link>
+                <Link to="/veiculos" className="link">Veiculos</Link>
+                <Link to="/contratos" className="link">Contratos</Link>
             </nav>
 
         </div>

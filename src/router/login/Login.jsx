@@ -52,7 +52,7 @@ export default function Login() {
                 </div>
 
 
-                <Link className='botao-login' to="/consulto_seguro/associados">
+                <Link className='botao-login' to="/associados">
                     <p>LOGIN</p>
                 </Link>
 

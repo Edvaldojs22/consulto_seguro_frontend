@@ -74,7 +74,7 @@ export default function VeiculoInfo() {
             </div>
             <div className="botao-arrow">
                 <button className="butao-aditar" onClick={handeClick}>Editar</button>
-                <Link to="/consulto_seguro/veiculos">
+                <Link to="/veiculos">
                     <IoIosArrowBack className="arrowVolta" />
                 </Link>
 
