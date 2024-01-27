@@ -161,7 +161,7 @@ export default function Contratos() {
 
                     {contratosFiltrados.map(contrato => (
 
-                        <Link key={contrato.id} to={`/contrato/${contrato.id}`} className="caixa-listaContratos corContrato">
+                        <Link key={contrato.id} to={`/contratos/${contrato.id}`} className="caixa-listaContratos corContrato">
 
                             <IoDocumentText className="icon-document" />
                             <p className="nomeAssociado">{contrato.associado}</p>

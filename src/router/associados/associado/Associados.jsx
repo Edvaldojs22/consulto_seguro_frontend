@@ -478,7 +478,7 @@ export default function Associados() {
 
                     {clientesFiltrados.map(cliente => (
 
-                        <Link key={cliente.id} to={`/associado/${cliente.id}`} className="caixa-listaAssociados">
+                        <Link key={cliente.id} to={`/associados/${cliente.id}`} className="caixa-listaAssociados">
 
                             <div className='icon-user'>
                                 <FaUser />

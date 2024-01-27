@@ -1,4 +1,4 @@
-import "./veiculos/novoVeiculos.css"
+import "./NovoVeiculo.css"
 import LogoCart from '../../../assets/img/car.png';
 import RodaPeAdd from "../../../components/rodaPe/RodaPeAdd";
 import { MdOutlineAttachMoney } from "react-icons/md";
