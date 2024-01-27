@@ -1,35 +1,6 @@
 .associados{
     position: relative;
 }
-header {
-    height: 90px;
-    background-color: #204285;
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-}
-
-.painel-icon {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 200px;
-}
-
-.icon-user {
-    font-size: 50px;
-    display: inline-block;
-    margin-right: 20px;
-    color: black;
-}
-
-header p {
-    color: #F8F4F4;
-    font-size: 18px;
-    font-weight: bold;
-    font-family: sans-serif;
-}
-
 
 .caixa-inpunt-pesquisa {
     width: calc(100% - 20%);

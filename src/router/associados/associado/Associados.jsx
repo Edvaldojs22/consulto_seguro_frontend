@@ -1,11 +1,10 @@
 import './Associados.css';
-import { FaCircleUser, FaUser } from "react-icons/fa6";
+import { FaUser } from "react-icons/fa6";
 import { IoPersonAddSharp } from "react-icons/io5";
-import Menu from '../../../components/menu/Menu.jsx';
 import { useState } from 'react';
 import { Link } from "react-router-dom";
 import LogoFone from "../../../assets/img/phone-call.png";
-import RodaPe from "../../../components/rodaPe/RodaPe.jsx";
+import Layout from '../../../components/layout.jsx';
 
 
 export const listaCliente = [
@@ -429,11 +428,7 @@ export const listaCliente = [
 
 ];
 
-
-
 export default function Associados() {
-
-
 
     const [termoPesquisa, setTermoPesquisa] = useState('');
 
@@ -447,19 +442,9 @@ export default function Associados() {
         setTermoPesquisa(e.target.value);
     }
 
-
-
     return (
+        <Layout>
         <div className='associados'>
-
-            <Menu  />
-
-            <header>
-                <div className='painel-icon'>
-                    <FaCircleUser className='icon-user' />
-                    <p>José Leandro</p>
-                </div>
-            </header>
 
             <div className='caixa-inpunt-pesquisa'>
 
@@ -477,7 +462,7 @@ export default function Associados() {
                 <div className="lista-associados">
 
                     {clientesFiltrados.map(cliente => (
-
+                        
                         <Link key={cliente.id} to={`/associados/${cliente.id}`} className="caixa-listaAssociados">
 
                             <div className='icon-user'>
@@ -501,8 +486,8 @@ export default function Associados() {
                 </div>
             </div>
 
-            <RodaPe />
         </div>
+    </Layout>
     )
 
 }

@@ -35,12 +35,18 @@ const AuthService = () => {
     }
 
     const decodedToken = jwtDecode(token);
-    console.log(decodedToken);
     const now = Date.now() / 1000; 
+    console.log('now: ', now, 'exp:', decodedToken.exp);
     return decodedToken.exp > now;
   }; 
 
-  return { currentUser, login, logout, isAuthenticated };
+  const getUsuario = () => {
+    const token = localStorage.getItem('currentUser');
+    const decodedToken = jwtDecode(token);
+    return decodedToken.sub;
+  }
+
+  return { currentUser, login, logout, isAuthenticated, getUsuario };
 };
 
 export default AuthService;

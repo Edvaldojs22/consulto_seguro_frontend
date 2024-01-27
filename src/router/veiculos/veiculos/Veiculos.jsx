@@ -1,11 +1,10 @@
 import { FaCircleUser } from "react-icons/fa6";
-import Menu from "../../../components/menu/Menu";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import LogoCart from '../../../assets/img/carBlack.png';
-import './Veiculo.css';
-import RodaPe from "../../../components/rodaPe/RodaPe";
-import LogoCarAdd from "../../../assets/img/carAdd.png"
+import LogoCart from "../../../assets/img/carBlack.png";
+import "./Veiculo.css";
+import LogoCarAdd from "../../../assets/img/carAdd.png";
+import Layout from "../../../components/layout.jsx";
 
 export const listaVeiculos = [
   {
@@ -27,7 +26,7 @@ export const listaVeiculos = [
     modeloAno: 2022,
     combustivel: "Gasolina",
     codigoFipe: "012345-6",
-    valor: 45000.00
+    valor: 45000.0,
   },
 
   {
@@ -49,7 +48,7 @@ export const listaVeiculos = [
     modeloAno: 2021,
     combustivel: "Flex",
     codigoFipe: "987654-3",
-    valor: 60000.00
+    valor: 60000.0,
   },
 
   {
@@ -71,7 +70,7 @@ export const listaVeiculos = [
     modeloAno: 2023,
     combustivel: "Álcool/Gasolina",
     codigoFipe: "543210-1",
-    valor: 55000.00
+    valor: 55000.0,
   },
   {
     id: 4,
@@ -92,9 +91,8 @@ export const listaVeiculos = [
     modeloAno: 2020,
     combustivel: "Gasolina",
     codigoFipe: "098765-4",
-    valor: 40000.00
+    valor: 40000.0,
   },
-
 
   {
     id: 5,
@@ -115,9 +113,8 @@ export const listaVeiculos = [
     modeloAno: 2021,
     combustivel: "Álcool/Gasolina",
     codigoFipe: "765432-8",
-    valor: 48000.00
+    valor: 48000.0,
   },
-
 
   {
     id: 6,
@@ -138,7 +135,7 @@ export const listaVeiculos = [
     modeloAno: 2022,
     combustivel: "Flex",
     codigoFipe: "109876-2",
-    valor: 53000.00
+    valor: 53000.0,
   },
 
   {
@@ -160,7 +157,7 @@ export const listaVeiculos = [
     modeloAno: 2021,
     combustivel: "Flex",
     codigoFipe: "765432-1",
-    valor: 78000.00
+    valor: 78000.0,
   },
 
   {
@@ -182,7 +179,7 @@ export const listaVeiculos = [
     modeloAno: 2022,
     combustivel: "Álcool/Gasolina",
     codigoFipe: "543210-9",
-    valor: 35000.00
+    valor: 35000.0,
   },
 
   {
@@ -204,7 +201,7 @@ export const listaVeiculos = [
     modeloAno: 2023,
     combustivel: "Flex",
     codigoFipe: "987654-9",
-    valor: 68000.00
+    valor: 68000.0,
   },
 
   {
@@ -226,7 +223,7 @@ export const listaVeiculos = [
     modeloAno: 2020,
     combustivel: "Gasolina",
     codigoFipe: "098765-7",
-    valor: 42000.00
+    valor: 42000.0,
   },
 
   {
@@ -248,7 +245,7 @@ export const listaVeiculos = [
     modeloAno: 2022,
     combustivel: "Diesel",
     codigoFipe: "109876-5",
-    valor: 85000.00
+    valor: 85000.0,
   },
 
   {
@@ -270,7 +267,7 @@ export const listaVeiculos = [
     modeloAno: 2021,
     combustivel: "Flex",
     codigoFipe: "765432-3",
-    valor: 55000.00
+    valor: 55000.0,
   },
 
   {
@@ -292,7 +289,7 @@ export const listaVeiculos = [
     modeloAno: 2022,
     combustivel: "Flex",
     codigoFipe: "543210-5",
-    valor: 60000.00
+    valor: 60000.0,
   },
 
   {
@@ -314,7 +311,7 @@ export const listaVeiculos = [
     modeloAno: 2023,
     combustivel: "Álcool/Gasolina",
     codigoFipe: "987654-2",
-    valor: 38000.00
+    valor: 38000.0,
   },
 
   {
@@ -336,7 +333,7 @@ export const listaVeiculos = [
     modeloAno: 2020,
     combustivel: "Diesel",
     codigoFipe: "098765-5",
-    valor: 78000.00
+    valor: 78000.0,
   },
 
   {
@@ -358,7 +355,7 @@ export const listaVeiculos = [
     modeloAno: 2021,
     combustivel: "Flex",
     codigoFipe: "109876-4",
-    valor: 72000.00
+    valor: 72000.0,
   },
 
   {
@@ -380,7 +377,7 @@ export const listaVeiculos = [
     modeloAno: 2022,
     combustivel: "Álcool/Gasolina",
     codigoFipe: "765432-7",
-    valor: 47000.00
+    valor: 47000.0,
   },
 
   {
@@ -402,7 +399,7 @@ export const listaVeiculos = [
     modeloAno: 2023,
     combustivel: "Flex",
     codigoFipe: "543210-3",
-    valor: 65000.00
+    valor: 65000.0,
   },
 
   {
@@ -424,7 +421,7 @@ export const listaVeiculos = [
     modeloAno: 2021,
     combustivel: "Álcool/Gasolina",
     codigoFipe: "987654-6",
-    valor: 59000.00
+    valor: 59000.0,
   },
 
   {
@@ -446,7 +443,7 @@ export const listaVeiculos = [
     modeloAno: 2020,
     combustivel: "Diesel",
     codigoFipe: "098765-6",
-    valor: 75000.00
+    valor: 75000.0,
   },
 
   {
@@ -468,7 +465,7 @@ export const listaVeiculos = [
     modeloAno: 2022,
     combustivel: "Álcool/Gasolina",
     codigoFipe: "109876-3",
-    valor: 40000.00
+    valor: 40000.0,
   },
 
   {
@@ -490,77 +487,77 @@ export const listaVeiculos = [
     modeloAno: 2021,
     combustivel: "Diesel",
     codigoFipe: "321098-1",
-    valor: 82000.00
+    valor: 82000.0,
   },
-
 ];
 
-
 export default function Veiculos() {
+  const [termoPesquisa, setTermoPesquisa] = useState("");
 
-
-
-  const [termoPesquisa, setTermoPesquisa] = useState('');
-
-
-  const veiculosFiltrados = listaVeiculos.filter(veiculo =>
-    veiculo.nome.toLocaleLowerCase().includes(termoPesquisa.toLocaleLowerCase()) ||
-    veiculo.placa.toLocaleLowerCase().includes(termoPesquisa.toLocaleLowerCase()) ||
-    veiculo.cor.toLocaleLowerCase().includes(termoPesquisa.toLocaleLowerCase())
+  const veiculosFiltrados = listaVeiculos.filter(
+    (veiculo) =>
+      veiculo.nome
+        .toLocaleLowerCase()
+        .includes(termoPesquisa.toLocaleLowerCase()) ||
+      veiculo.placa
+        .toLocaleLowerCase()
+        .includes(termoPesquisa.toLocaleLowerCase()) ||
+      veiculo.cor
+        .toLocaleLowerCase()
+        .includes(termoPesquisa.toLocaleLowerCase())
   );
 
   const pesquisaInpunt = (e) => {
     setTermoPesquisa(e.target.value);
-  }
-
+  };
 
   return (
-    <div className='associados'>
-
-      <Menu />
-
-      <header>
-        <div className='painel-icon'>
-          <FaCircleUser className='icon-user' />
-          <p>José Leandro</p>
-        </div>
-      </header>
-
-      <div className='caixa-inpunt-pesquisa'>
-        <p className='number'>{veiculosFiltrados.length}</p>
-        <input id='inpunt-pesquisa' type="text" placeholder="Pesquisa Veiculo"
-          value={termoPesquisa}
-          onChange={pesquisaInpunt} />
-        <button type='submit' className='botao-pesquisa'>
-          <Link to="/veiculos/novoVeiculos">
-            <img src={LogoCarAdd} alt="" />
-          </Link>
-        </button>
-
-      </div>
-
-      <div className="caixa-lista-associados">
-        <div className="lista-associados">
-
-          {veiculosFiltrados.map(veiculo => (
-            <Link key={veiculo.id} to={`/veiculos/${veiculo.id}`} className="caixa-listaVeiculos">
-
-
-              <img className="icon-cart" src={LogoCart} alt="" />
-
-
-              <div className="nome-placa">
-                <p> <span>Veículo:</span> {veiculo.nome}</p>
-                <p><span> Placa:</span> {veiculo.placa}</p>
-              </div>
-              <p className="cor"> <span>Cor:</span> {veiculo.cor}</p>
+    <Layout>
+      <div className="associados">
+        <div className="caixa-inpunt-pesquisa">
+          <p className="number">{veiculosFiltrados.length}</p>
+          <input
+            id="inpunt-pesquisa"
+            type="text"
+            placeholder="Pesquisa Veiculo"
+            value={termoPesquisa}
+            onChange={pesquisaInpunt}
+          />
+          <button type="submit" className="botao-pesquisa">
+            <Link to="/veiculos/novoVeiculos">
+              <img src={LogoCarAdd} alt="" />
             </Link>
-          ))}
+          </button>
+        </div>
 
+        <div className="caixa-lista-associados">
+          <div className="lista-associados">
+            {veiculosFiltrados.map((veiculo) => (
+              <Link
+                key={veiculo.id}
+                to={`/veiculos/${veiculo.id}`}
+                className="caixa-listaVeiculos"
+              >
+                <img className="icon-cart" src={LogoCart} alt="" />
+
+                <div className="nome-placa">
+                  <p>
+                    {" "}
+                    <span>Veículo:</span> {veiculo.nome}
+                  </p>
+                  <p>
+                    <span> Placa:</span> {veiculo.placa}
+                  </p>
+                </div>
+                <p className="cor">
+                  {" "}
+                  <span>Cor:</span> {veiculo.cor}
+                </p>
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
-      <RodaPe />
-
-    </div>
-  )
+    </Layout>
+  );
 }
