@@ -13,6 +13,7 @@ import NovoVeiculo from './router/veiculos/addVeiculo/NovoVeiculo.jsx';
 import Contratos from './router/contratos/contrato/Contratos.jsx';
 import ContratoInfo from './router/contratos/contratosInfo/ContratoInfo.jsx';
 import AddContrato from './router/contratos/addContrato/AddContrato.jsx';
+import Mensagem from './router/mensagem/Mesagem.jsx';
 
 
 const router = createBrowserRouter([
@@ -55,6 +56,11 @@ const router = createBrowserRouter([
   {
     path: "/consulto_seguro/NovoContrato",
     element: <AddContrato />
+  },
+
+  {
+    path: "/consulto_seguro/Mensagem",
+    element: <Mensagem />
   }
 
 ])
