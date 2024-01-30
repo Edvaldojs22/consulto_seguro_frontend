@@ -6,6 +6,7 @@ export default function Mensagem() {
 
 
     const [clienteCidade, setClieenteCidade] = useState('');
+    const [checkGeral, setCheckGeral] = useState(false);
 
     const clientesFiltradosCidade = listaCliente.filter(cliente =>
         cliente.cidade.toLocaleLowerCase().includes(clienteCidade.toLocaleLowerCase())
@@ -14,6 +15,18 @@ export default function Mensagem() {
     const pesquisaInpuntCidade = (e) => {
         setClieenteCidade(e.target.value);
     }
+
+    const handleCheckGeralChange = (e) => {
+        const isChecked = e.target.checked;
+        setCheckGeral(isChecked);
+
+        // Atualiza o estado de todos os checkboxes individuais com base no estado do checkbox geral
+        const checkboxesIndividuais = document.querySelectorAll('.p-check input[type="checkbox"]');
+        checkboxesIndividuais.forEach(checkbox => {
+            checkbox.checked = isChecked;
+        });
+    }
+
 
     return (
         <div className="painelMensagem">
@@ -31,7 +44,7 @@ export default function Mensagem() {
                             onChange={pesquisaInpuntCidade} />
 
                         <div className="caixaCheckGeral">
-                            <input id="checkGeral" type="checkbox" name="campoCheckGeral" required/>
+                            <input id="checkGeral" type="checkbox" name="campoCheckGeral" checked={checkGeral} onChange={handleCheckGeralChange} />
                         </div>
 
                     </div>
@@ -40,16 +53,15 @@ export default function Mensagem() {
 
                 <div className="associadoPesquisa">
                     {clientesFiltradosCidade.map(cliente => (
-                        <div className="p-check">
+                        <div key={cliente.id} className="p-check">
                             <p>{cliente.nome}</p>
                             <input id="check" type="checkbox" />
-
                         </div>
                     ))}
                 </div>
             </section>
 
-            
+
             <div className="painelEnvioMensagem">
                 <p>Escreva o Texto Desejado</p>
                 <textarea required className="textoMensagem" id="mensagem"></textarea>

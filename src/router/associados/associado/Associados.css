@@ -34,7 +34,7 @@ header p {
 .caixa-inpunt-pesquisa {
     width: calc(100% - 20%);
     max-width: 700px;
-    margin: 20px auto;
+    margin: 10px auto 10px;
     position: relative;
 
 }
@@ -44,7 +44,7 @@ header p {
     height: 50px;
     border: none;
     background-color: #CAC6C6;
-    border-radius: 20px;
+    border-radius: 10px;
     outline: none;
     text-align: center;
     font-family: sans-serif;
@@ -77,7 +77,6 @@ header p {
 }
 
 .icon-search {
- 
     padding-right: 10px;
     top: 0;
     right: 0;
@@ -85,8 +84,8 @@ header p {
     background-color: #204285;
     width: 70px;
     height: 50px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     cursor: pointer;
 
 }

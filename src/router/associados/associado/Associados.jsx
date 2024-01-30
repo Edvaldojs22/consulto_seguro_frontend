@@ -455,10 +455,7 @@ export default function Associados() {
             <Menu  />
 
             <header>
-                <div className='painel-icon'>
-                    <FaCircleUser className='icon-user' />
-                    <p>José Leandro</p>
-                </div>
+                
             </header>
 
             <div className='caixa-inpunt-pesquisa'>

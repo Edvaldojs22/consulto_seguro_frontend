@@ -135,14 +135,7 @@ export default function Contratos() {
         <div className='associados'>
 
             <Menu />
-
-
-            <header>
-                <div className='painel-icon'>
-                    <FaCircleUser className='icon-user' />
-                    <p>José Leandro</p>
-                </div>
-            </header>
+            <header></header>
 
             <div className='caixa-inpunt-pesquisa'>
 

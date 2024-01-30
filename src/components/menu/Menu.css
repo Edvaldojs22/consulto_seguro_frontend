@@ -1,3 +1,16 @@
+.painelMenu {
+    background-color: rgb(94, 255, 0);
+
+}
+
+.iconUser{
+    position: fixed;
+    color: white;
+    font-size: 90px;
+    left: 50%;
+    transform: translate(-50%);
+    top: 100px;
+}
 .icon-menu {
     position: fixed;
     font-size: 50px;
@@ -6,6 +19,7 @@
     cursor: pointer;
     z-index: 2;
     color: rgb(255, 255, 255);
+    transition: 0.2s;
 }
 
 .caixa-menu {
@@ -23,7 +37,7 @@
     gap: 30px;
     overflow: hidden;
     transition: all 0.1s;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(25px);
 }
 
 .caixa-menuAberta {
@@ -31,30 +45,60 @@
     height: 100vh;
 }
 
+.OVA{
+    display: flex;
+    gap: 10px;
+}
+
+.OVA .link:nth-child(3){
+    padding-top: 5px;
+    font-size: 50px;   
+}
+
+.home-mensage{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+
 .link {
     text-decoration: none;
-    width: calc(100% - 60%);
-    max-width: 200px;
-    height: 50px;
-    background-color: #d31e25;
+    width: 85px;
+    height: 85px;
+    background-color: #ffffff;
+    border:#204285 solid 3px;
     color: #F8F4F4;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: sans-serif;
     cursor: pointer;
-    border-radius: 7px;
+    border-radius: 15px;
     color: #f2f2f2;
     font-weight: 800;
     font-size: 18px;
     font-weight: 700;
     transition: all 0.1s;
+    font-size: 60px;
+    color:#204285;
+    display: flex;
+    flex-direction: column;
+}
+.contrato{
+    margin-top: 5px;
 }
 
 .link:hover {
-    background-color: #204285;
-    transform: scale(0.9);
+    transform: scale(1.1);
 }
+
+.link p{
+    font-size: 10px;
+    font-weight: 700;
+}
+
 
 .caixa-menu p:hover {
     background-color: #027aae;
@@ -73,25 +117,12 @@
     justify-content: space-between;
     align-items: center;
     bottom: 0;
-   
 }
 
-.caixa-mensagem p {
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-    font-family: sans-serif;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.iconMessage {
-    font-size: 60px;
-    text-decoration: none;
-    color: red;
-    margin-bottom:5px ;
-    cursor: pointer;
-}
-
-.iconMessage:hover{
-    transform: scale(1.2);
+.imgAutoplanosMenu img{
+    width:250px;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
 }

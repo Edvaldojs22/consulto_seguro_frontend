@@ -1,4 +1,3 @@
-import { FaCircleUser } from "react-icons/fa6";
 import Menu from "../../../components/menu/Menu";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -519,12 +518,7 @@ export default function Veiculos() {
 
       <Menu />
 
-      <header>
-        <div className='painel-icon'>
-          <FaCircleUser className='icon-user' />
-          <p>José Leandro</p>
-        </div>
-      </header>
+      <header> </header>
 
       <div className='caixa-inpunt-pesquisa'>
         <p className='number'>{veiculosFiltrados.length}</p>

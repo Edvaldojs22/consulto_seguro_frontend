@@ -3,6 +3,12 @@ import './Menu.css';
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { BiMessageAltEdit } from "react-icons/bi";
+import { MdHome } from "react-icons/md";
+import { FaUsers } from "react-icons/fa";
+import { FaCarSide } from "react-icons/fa";
+import { FaFileContract } from "react-icons/fa";
+import LogoAutoPlanos from "../../assets/img/autoPlanos.png"
+import { FaUserCircle } from "react-icons/fa";
 
 
 export default function Menu() {
@@ -32,22 +38,45 @@ export default function Menu() {
 
 
     return (
-        <div>
+
+        <div className="painelMenu">
             <LuMenu className='icon-menu' onClick={ativaMenu} />
             <nav className={caixaMenuClasses}>
-                <Link to="/consulto_seguro/associados" className="link">Associados</Link>
-                <Link to="/consulto_seguro/veiculos" className="link">Veiculos</Link>
-                <Link to="/consulto_seguro/contratos" className="link">Contratos</Link>
+                <FaUserCircle className="iconUser" />
+                <div className="incons">
 
-                <div className="caixa-mensagem">
-                    <p>Mensagem Personalizada</p>
-                    <Link to={"/consulto_seguro/Mensagem"}>
-                        <BiMessageAltEdit className="iconMessage" />
-                    </Link>
+                    <div className="OVA">
+                        <Link to="/consulto_seguro/associados" className="link">
+                            <FaUsers />
+                            <p>Associados</p>
+                        </Link>
+                        <Link to="/consulto_seguro/veiculos" className="link">
+                            <FaCarSide />
+                            <p>Veículos</p>
+                        </Link>
+                        <Link to="/consulto_seguro/contratos" className="link">
+                            <FaFileContract />
+                            <p className="contrato">Contratos</p>
+                        </Link>
+                    </div>
+
+                    <div className="home-mensage">
+                        <Link className="link">
+                            <MdHome />
+                            <p>Iicio</p>
+                        </Link>
+                        <Link to={"/consulto_seguro/Mensagem"} className="link">
+                            <BiMessageAltEdit />
+                            <p>Mensagem</p>
+                        </Link>
+                    </div>
+
+                </div>
+
+                <div className="imgAutoplanosMenu">
+                    <img src={LogoAutoPlanos} alt="" />
                 </div>
             </nav>
-
-
 
         </div>
     )
