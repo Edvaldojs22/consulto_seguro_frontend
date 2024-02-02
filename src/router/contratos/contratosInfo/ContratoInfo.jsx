@@ -77,7 +77,6 @@ export default function ContratosInfo() {
                 <Link to="/consulto_seguro/contratos">
                     <IoIosArrowBack className="arrowVolta" />
                 </Link>
-
             </div>
 
         </div>

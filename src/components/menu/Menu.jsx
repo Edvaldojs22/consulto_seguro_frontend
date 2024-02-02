@@ -1,14 +1,18 @@
 import { LuMenu } from "react-icons/lu";
+import { IoMdClose } from "react-icons/io";
 import './Menu.css';
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { BiMessageAltEdit } from "react-icons/bi";
-import { MdHome } from "react-icons/md";
+import { IoChatbubbleEllipses } from "react-icons/io5";
+import { IoIosArrowForward } from "react-icons/io";
 import { FaUsers } from "react-icons/fa";
 import { FaCarSide } from "react-icons/fa";
 import { FaFileContract } from "react-icons/fa";
 import LogoAutoPlanos from "../../assets/img/autoPlanos.png"
-import { FaUserCircle } from "react-icons/fa";
+import { BiSupport } from "react-icons/bi";
+import { BiLogOutCircle } from "react-icons/bi";
+import { TiHome } from "react-icons/ti";
+import { FaUser } from "react-icons/fa";
 
 
 export default function Menu() {
@@ -40,42 +44,126 @@ export default function Menu() {
     return (
 
         <div className="painelMenu">
-            <LuMenu className='icon-menu' onClick={ativaMenu} />
+
+            {menuAberto ? (
+                <IoMdClose className='icon-menu' onClick={ativaMenu} />
+            ) : (
+                <LuMenu className='icon-menu' onClick={ativaMenu} />
+            )
+            }
+
+
             <nav className={caixaMenuClasses}>
-                <FaUserCircle className="iconUser" />
-                <div className="incons">
+                <div className="caixaImg">
+                    <img className="imgMenuAutoPlanos" src={LogoAutoPlanos} alt="" />
+                </div>
 
-                    <div className="OVA">
-                        <Link to="/consulto_seguro/associados" className="link">
-                            <FaUsers />
-                            <p>Associados</p>
-                        </Link>
-                        <Link to="/consulto_seguro/veiculos" className="link">
-                            <FaCarSide />
-                            <p>Veículos</p>
-                        </Link>
-                        <Link to="/consulto_seguro/contratos" className="link">
-                            <FaFileContract />
-                            <p className="contrato">Contratos</p>
-                        </Link>
+
+                <div className="caixaIcons">
+
+                    <div className="iconsPage">
+
+                        <div className="caixaLink">
+
+                            <div>
+                                <TiHome />
+                                <p>Início</p>
+                            </div>
+
+                            <Link to="/consulto_seguro/associados" className="link">
+                                <IoIosArrowForward className="iconArroy" />
+                            </Link>
+
+                        </div>
+
+                        <div className="caixaLink">
+
+                            <div>
+                                <FaUser />
+                                <p>Usuário</p>
+                            </div>
+
+                            <Link to="/consulto_seguro/associados" className="link">
+                                <IoIosArrowForward className="iconArroy" />
+                            </Link>
+
+                        </div>
+
+
+                        <div className="caixaLink">
+
+                            <div>
+                                <FaUsers />
+                                <p>Associados</p>
+                            </div>
+
+                            <Link to="/consulto_seguro/associados" className="link">
+                                <IoIosArrowForward className="iconArroy" />
+                            </Link>
+
+                        </div>
+
+                        <div className="caixaLink">
+
+                            <div>
+                                <FaCarSide />
+                                <p>Veículos</p>
+                            </div>
+
+                            <Link to="/consulto_seguro/veiculos" className="link">
+                                <IoIosArrowForward className="iconArroy" />
+                            </Link>
+
+                        </div>
+
+                        <div className="caixaLink">
+
+                            <div>
+                                <FaFileContract />
+                                <p className="contrato">Contratos</p>
+                            </div>
+
+                            <Link to="/consulto_seguro/contratos" className="link">
+                                <IoIosArrowForward className="iconArroy" />
+                            </Link>
+
+                        </div>
+
+                        <div className="caixaLink">
+
+                            <div>
+                                <IoChatbubbleEllipses />
+                                <p>Mensagem Personalizada</p>
+                            </div>
+
+                            <Link to={"/consulto_seguro/Mensagem"} className="link">
+                                <IoIosArrowForward className="iconArroy" />
+
+                            </Link>
+
+                        </div>
+
+                        <div className="caixaLink">
+
+                            <div>
+                                <BiSupport />
+                                <p>Suporte</p>
+                            </div>
+
+                            <Link className="link">
+                                <IoIosArrowForward className="iconArroy" />
+                            </Link>
+
+                        </div>
                     </div>
 
-                    <div className="home-mensage">
-                        <Link className="link">
-                            <MdHome />
-                            <p>Iicio</p>
-                        </Link>
-                        <Link to={"/consulto_seguro/Mensagem"} className="link">
-                            <BiMessageAltEdit />
-                            <p>Mensagem</p>
-                        </Link>
+                    <div className="caixaSai">
+                        <BiLogOutCircle className="iconsair"/>
+                        <p>Sair</p>
                     </div>
 
                 </div>
 
-                <div className="imgAutoplanosMenu">
-                    <img src={LogoAutoPlanos} alt="" />
-                </div>
             </nav>
 
         </div>

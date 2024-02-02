@@ -2,6 +2,7 @@ import "./Mensagem.css";
 import { listaCliente } from "../associados/associado/Associados";
 import { useState } from "react";
 
+
 export default function Mensagem() {
 
 
@@ -67,6 +68,7 @@ export default function Mensagem() {
                 <textarea required className="textoMensagem" id="mensagem"></textarea>
                 <button type="submit">Evnviar</button>
             </div>
+
         </div>
     )
 } 

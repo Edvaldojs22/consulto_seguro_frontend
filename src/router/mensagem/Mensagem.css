@@ -1,5 +1,4 @@
 .painelMensagem {
-    background-color: #204285;
     height: 100vh;
     font-family: sans-serif;
 }
@@ -7,9 +6,9 @@
 .p-Inpunt {
     position: fixed;
     width: 100%;
-    background-color: #204285;
     z-index: 1;
     padding-top: 5px;
+    background-color: white;
 }
 
 .iconsPosition {
@@ -17,6 +16,7 @@
     max-width: 500px;
     position: relative;
     margin: 0 auto;
+
 }
 
 .clienteNumber {
@@ -26,7 +26,7 @@
     left: 10px;
     bottom: 10px;
     z-index: 1;
-    color: #204285;
+    color: #000000;
 }
 
 .caixaCheckGeral {
@@ -47,7 +47,9 @@
     text-align: center;
     outline: none;
     border: none;
-    border-bottom: solid 1px #204285;
+    border-bottom: solid 1px #000000;
+    background-color: #CAC6C6;
+   
 }
 
 .pesquisaAssociado {
@@ -56,12 +58,13 @@
     overflow-y: auto;
     display: flex;
     justify-content: center;
+ 
 }
 
 .pesquisaAssociado p {
     font-size: 20px;
     font-weight: bold;
-    color: white;
+    color: rgb(4, 0, 0);
     height: 50px;
     font-family: sans-serif;
     padding: 10px 0;
@@ -71,7 +74,8 @@
     text-align: center;
     font-family: sans-serif;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.681);
 }
 
 .associadoPesquisa {
@@ -83,7 +87,6 @@
 
 .associadoPesquisa p {
     color: rgb(43, 43, 43);
-    background-color: white;
     padding: 0;
     display: flex;
     justify-content: center;
@@ -92,12 +95,12 @@
 }
 
 .p-check {
-    background-color: white;
+    background-color: #ACACAC5c;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    border-bottom: 1px solid #204285;
+    border-bottom: 1px solid #ffffff;
 }
 
 .p-check input {
@@ -117,7 +120,7 @@
 
 .painelEnvioMensagem p{
     font-size: 20px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: bold;
     margin-bottom: 15px;
 }

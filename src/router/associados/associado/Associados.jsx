@@ -452,14 +452,13 @@ export default function Associados() {
     return (
         <div className='associados'>
 
-            <Menu  />
+            <Menu />
 
             <header>
-                
+
             </header>
 
             <div className='caixa-inpunt-pesquisa'>
-
                 <p className='number'>{clientesFiltrados.length}</p>
                 <input id='inpunt-pesquisa' type="text" placeholder="Pesquisa Cliente"
                     value={termoPesquisa}
