@@ -37,7 +37,7 @@ const AuthService = () => {
     const token = localStorage.getItem("currentUser");
     if (!token) {
       //TODO alterar para false antes de subir ambiente
-      return true;
+      return false;
     }
 
     const decodedToken = jwtDecode(token);
