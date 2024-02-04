@@ -40,19 +40,10 @@ export default function Login() {
                     <FaLock className='lock' />
                     <input className='senha ' type="password" placeholder='Senha:' value={senha} onChange={senhaOnchange} />
 
-                    {/* <div className='caixa-salvar'>
-                        <div className='box'>
-                            
-                        </div>
-                        <div>
-                            <p>Lembrar</p>
-                        </div>
-                    </div> */}
-
                 </div>
 
 
-                <Link className='botao-login' to="/consulto_seguro/associados">
+                <Link className='botao-login' to="/consulto_seguro/home">
                     <p>LOGIN</p>
                 </Link>
 

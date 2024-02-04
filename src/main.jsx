@@ -14,12 +14,17 @@ import Contratos from './router/contratos/contrato/Contratos.jsx';
 import ContratoInfo from './router/contratos/contratosInfo/ContratoInfo.jsx';
 import AddContrato from './router/contratos/addContrato/AddContrato.jsx';
 import Mensagem from './router/mensagem/Mesagem.jsx';
+import Home from './home/Home.jsx';
 
 
 const router = createBrowserRouter([
   {
     path: "/consulto_seguro/",
     element: <Login />,
+  },
+  {
+    path:"/consulto_seguro/home",
+    element: <Home />
   },
   {
     path: "/consulto_seguro/associados",
