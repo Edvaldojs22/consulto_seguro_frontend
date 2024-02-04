@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
-import Menu from "../components/menu/Menu"
-import RodaPe from "../components/rodaPe/RodaPe"
 import { IoChatbubbleEllipsesSharp } from "react-icons/io5";
 import "./Home.css"
 import { FaCarSide, FaFileContract, FaUserCircle, FaUsers } from "react-icons/fa";
-import { listaCliente } from "../router/associados/associado/Associados";
-import { listaContratos } from "../router/contratos/contrato/Contratos";
-import { listaVeiculos } from "../router/veiculos/veiculos/Veiculos";
+import { listaCliente } from "../associados/associado/Associados";
+import { listaContratos } from "../contratos/contrato/Contratos"; 
+import { listaVeiculos } from "../veiculos/veiculos/Veiculos";
+import Menu from "../../components/menu/Menu";
+import RodaPe from "../../components/rodaPe/RodaPe";
 
 export default function Home() {
 

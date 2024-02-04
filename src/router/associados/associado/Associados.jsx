@@ -1,5 +1,4 @@
 import './Associados.css';
-import { FaCircleUser, FaUser } from "react-icons/fa6";
 import { IoPersonAddSharp } from "react-icons/io5";
 import Menu from '../../../components/menu/Menu.jsx';
 import { useState } from 'react';
