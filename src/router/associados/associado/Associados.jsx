@@ -447,7 +447,6 @@ export default function Associados() {
         <div className='associados'>
 
             <div className='caixa-inpunt-pesquisa'>
-
                 <p className='number'>{clientesFiltrados.length}</p>
                 <input id='inpunt-pesquisa' type="text" placeholder="Pesquisa Cliente"
                     value={termoPesquisa}

@@ -9,8 +9,12 @@
     font-weight: 600;
     padding: 8px;
     position: relative;
-    background-color: #d31e25;
+    background-color: #ACACAC5c;
 }
+.associados span{
+    color: black;
+}
+
 
 .botao-pesquisa img{
     width: 40px;
@@ -18,11 +22,10 @@
     top: 0;
     right: 0;
     padding-right: 5px;
-    background-color: #204285;
     height: 50px;
     width: 60px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 
 }
 
@@ -45,10 +48,10 @@
 
 .nome-placa p{
     font-size: 14px;
+    color: #204285;
 }
 .nome-placa span{
     font-size: 15px;
-    
 }
 
 .nome-placa p {
@@ -62,6 +65,7 @@
 .cor {
     text-align: center;
     font-size: 14px;
+    color: #204285;
 }
 
 .cor span {
