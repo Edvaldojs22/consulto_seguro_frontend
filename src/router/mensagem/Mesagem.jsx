@@ -73,7 +73,7 @@ export default function Mensagem() {
         <div className="painelEnvioMensagem">
           <p>Escreva o Texto Desejado</p>
           <textarea required className="textoMensagem" id="mensagem"></textarea>
-          <button type="submit">Evnviar</button>
+          <button type="submit">Enviar</button>
         </div>
       </div>
     </Layout>
