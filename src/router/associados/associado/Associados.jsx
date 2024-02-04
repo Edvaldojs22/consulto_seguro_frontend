@@ -1,10 +1,10 @@
 import './Associados.css';
+import { FaUser } from "react-icons/fa6";
 import { IoPersonAddSharp } from "react-icons/io5";
-import Menu from '../../../components/menu/Menu.jsx';
 import { useState } from 'react';
 import { Link } from "react-router-dom";
 import LogoFone from "../../../assets/img/phone-call.png";
-import RodaPe from "../../../components/rodaPe/RodaPe.jsx";
+import Layout from '../../../components/layout.jsx';
 
 
 export const listaCliente = [
@@ -428,11 +428,7 @@ export const listaCliente = [
 
 ];
 
-
-
 export default function Associados() {
-
-
 
     const [termoPesquisa, setTermoPesquisa] = useState('');
 
@@ -446,16 +442,9 @@ export default function Associados() {
         setTermoPesquisa(e.target.value);
     }
 
-
-
     return (
+        <Layout>
         <div className='associados'>
-
-            <Menu />
-
-            <header>
-
-            </header>
 
             <div className='caixa-inpunt-pesquisa'>
                 <p className='number'>{clientesFiltrados.length}</p>
@@ -463,7 +452,7 @@ export default function Associados() {
                     value={termoPesquisa}
                     onChange={pesquisaInpunt} />
                 <button type='submit' className='botao-pesquisa'>
-                    <Link to="/consulto_seguro/NovoAssociado"><IoPersonAddSharp className='icon-search' /></Link>
+                    <Link to="/associados/novoAssociado"><IoPersonAddSharp className='icon-search' /></Link>
                 </button>
 
             </div>
@@ -472,8 +461,8 @@ export default function Associados() {
                 <div className="lista-associados">
 
                     {clientesFiltrados.map(cliente => (
-
-                        <Link key={cliente.id} to={`/consulto_seguro/associado/${cliente.id}`} className="caixa-listaAssociados">
+                        
+                        <Link key={cliente.id} to={`/associados/${cliente.id}`} className="caixa-listaAssociados">
 
                             <div className='icon-user'>
                                 <FaUser />
@@ -496,8 +485,8 @@ export default function Associados() {
                 </div>
             </div>
 
-            <RodaPe />
         </div>
+    </Layout>
     )
 
 }

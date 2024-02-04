@@ -14,32 +14,26 @@ import { BiLogOutCircle } from "react-icons/bi";
 import { TiHome } from "react-icons/ti";
 import { FaUser } from "react-icons/fa";
 
+import AuthService from "../../services/authService";
 
 export default function Menu() {
-
     const [menuAberto, setMenuAberto] = useState(false);
     const navigate = useNavigate();
+    const authService = AuthService();
 
     const ativaMenu = () => {
-        if (menuAberto) {
-            setMenuAberto(false)
-        } else {
-            setMenuAberto(true)
-        }
+        setMenuAberto(!menuAberto);
     }
-
     const navigateTo = (rota) => {
         navigate(rota);
-        setMenuAberto(false)
+        setMenuAberto(false);
     }
 
+    const logout = () => {
+        authService.logout();
+    }
 
     const caixaMenuClasses = 'caixa-menu ' + (menuAberto ? 'caixa-menuAberta' : '');
-
-
-
-
-
 
     return (
 
@@ -165,7 +159,6 @@ export default function Menu() {
                 </div>
 
             </nav>
-
         </div>
     )
 }

@@ -1,11 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import "./App.css"
-import Associados from './router/associados/associado/Associados.jsx'
-import Veiculos from './router/veiculos/veiculos/Veiculos.jsx';
-import Login from './router/login/Login.jsx';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import AssociadosInfo from './router/associados/associadosInfo/AssociadoInfo.jsx';
+import Rotas from './router/routes'
 
 import NovoAssociado from './router/associados/addAssociado/NovoAssociado.jsx';
 import VeiculoInfo from './router/veiculos/veiculosInfo/VeiculoInfo.jsx';
@@ -73,6 +69,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <Rotas/>
   </React.StrictMode>,
 )
