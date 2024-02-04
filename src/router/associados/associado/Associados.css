@@ -1,7 +1,6 @@
 .associados{
     position: relative;
 }
-
 header {
     height: 70px;
     display: flex;
@@ -191,4 +190,3 @@ header p {
     width: 15px;
     margin-right: 2px;
 }
-

@@ -25,7 +25,7 @@ export default function Home() {
 
                 <nav className="circleLink">
                     <div>
-                        <Link className="circleIcon" to="/consulto_seguro/associados">
+                        <Link className="circleIcon" to="/associados">
                             <FaUsers />
                             <div>
                                 {clienteQuantidade.length}
@@ -35,7 +35,7 @@ export default function Home() {
                     </div>
 
                     <div>
-                        <Link className="circleIcon"  to="/consulto_seguro/veiculos">
+                        <Link className="circleIcon"  to="/veiculos">
                             <FaCarSide />
                             <div>
                                 {veiculoQuantidade.length}
@@ -44,7 +44,7 @@ export default function Home() {
                     </div>
 
                     <div>
-                        <Link className="circleIcon" to="/consulto_seguro/contratos" >
+                        <Link className="circleIcon" to="/contratos" >
                             <FaFileContract />
                             <div>
                                 {contratoQuantidade.length}
@@ -56,7 +56,7 @@ export default function Home() {
 
                 <div >
 
-                    <Link className="caixaMensagem"  to="/consulto_seguro/Mensagem">
+                    <Link className="caixaMensagem"  to="/mensagem">
                         <IoChatbubbleEllipsesSharp className="iconMSG" />
                         <p>Mensagem Personalizada</p>
                     </Link>

@@ -38,20 +38,15 @@ export default function Login() {
         <div className='app'>
             <img src={Logo} alt="Auto Planos" />
             <div className='main'>
-                <div className='caixaInput'>
+            <div className='caixaInput'>
                     <FaUser className='icon user' />
                     <input className='cpf' type="text" placeholder='Usuário:' value={username} onChange={usuarioOnChange} />
                 </div>
                 <div className='caixaInput'>
                     <FaLock className='lock' />
-                    <input className='senha ' type="password" placeholder='Senha:' value={senha} onChange={senhaOnchange} />
-
+                    <input className='senha' type="password" placeholder='Senha:' value={password} onChange={senhaOnChange} />
                 </div>
-
-
-                <Link className='botao-login' to="/consulto_seguro/home">
-                    <p>LOGIN</p>
-                </Link>
+                <button className='botao-login' onClick={handleLogin}>LOGIN</button>
 
             </div>
         </div>
