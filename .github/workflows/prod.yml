@@ -31,4 +31,4 @@ jobs:
         aws-region: ${{ secrets.AWS_REGION }}
 
     - name: Deploy to S3
-      run: aws s3 sync www/ s3://consultor-seguro
+      run: aws s3 sync dist/ s3://consultor-seguro
