@@ -18,6 +18,8 @@ jobs:
       with:
         node-version: 18.x
         cache: 'npm'
+    - name: Clean Vite
+      run: vite clean
     - name: npm install
       run: npm install
     - name: npm build
