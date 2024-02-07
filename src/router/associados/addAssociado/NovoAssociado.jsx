@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./novoAssociado.css";
+import "./NovoAssociado.css";
 import { FaCircleUser } from "react-icons/fa6";
 import { useEffect } from "react";
 import Layout from "../../../components/layout.jsx";
