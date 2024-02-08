@@ -19,7 +19,7 @@ export default function AssociadosInfo() {
   );
 
   return (
-    <Layout>
+    
       <div className="caixa">
         <FaCircleUser className="iconUserInfo" />
         <div className="caixaInfos">
@@ -113,6 +113,6 @@ export default function AssociadosInfo() {
           </Link>
         </div>
       </div>
-    </Layout>
+    
   );
 }

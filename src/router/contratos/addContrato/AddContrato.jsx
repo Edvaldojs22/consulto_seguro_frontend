@@ -50,7 +50,7 @@ export default function AddContrato() {
   //---------------------------
 
   return (
-    <Layout>
+  
       <div className="caixaForm">
         <form className="formContrato">
           <MdEditDocument className="document " />
@@ -290,6 +290,6 @@ export default function AddContrato() {
           <button type="submit">Salvar</button>
         </form>
       </div>
-    </Layout>
+    
   );
 }

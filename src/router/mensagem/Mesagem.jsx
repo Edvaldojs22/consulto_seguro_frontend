@@ -30,7 +30,7 @@ export default function Mensagem() {
   };
 
   return (
-    <Layout>
+    <Layout > 
       <div className="painelMensagem">
         <section className="pesquisaAssociado">
           <div className="p-Inpunt">

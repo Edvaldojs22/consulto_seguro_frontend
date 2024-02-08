@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import LogoCart from "../../../assets/img/carBlack.png";
+import { FaCarSide } from "react-icons/fa6";
 import "./Veiculo.css";
 import LogoCarAdd from "../../../assets/img/carAdd.png";
 import Layout from "../../../components/layout.jsx";
@@ -501,7 +501,7 @@ export default function Veiculos() {
       veiculo.placa
         .toLocaleLowerCase()
         .includes(termoPesquisa.toLocaleLowerCase()) ||
-      veiculo.cor
+      veiculo.proprietario
         .toLocaleLowerCase()
         .includes(termoPesquisa.toLocaleLowerCase())
   );
@@ -530,28 +530,30 @@ export default function Veiculos() {
         </div>
 
         <div className="caixa-lista-associados">
+
           <div className="lista-associados">
             {veiculosFiltrados.map((veiculo) => (
               <Link
                 key={veiculo.id}
                 to={`/veiculos/${veiculo.id}`}
-                className="caixa-listaVeiculos"
-              >
-                <img className="icon-cart" src={LogoCart} alt="" />
+                className="caixa-listaVeiculos">
 
-                <div className="nome-placa">
+                <FaCarSide className="icon-cart" />
+
+                <div className="nome-proprietario">
                   <p>
-                    {" "}
-                    <span>Veículo:</span> {veiculo.nome}
+                    {veiculo.nome}
                   </p>
+
                   <p>
-                    <span> Placa:</span> {veiculo.placa}
+                    <span> Proprietário:</span> {veiculo.proprietario}
                   </p>
+
+
+                  <p className="placa"> <span>Placa:</span> {veiculo.placa}</p>
                 </div>
-                <p className="cor">
-                  {" "}
-                  <span>Cor:</span> {veiculo.cor}
-                </p>
+
+
               </Link>
             ))}
           </div>

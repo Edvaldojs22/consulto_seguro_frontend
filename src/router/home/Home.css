@@ -1,7 +1,9 @@
 .caixaHome {
     position: relative;
     height: 100vh;
-    border: solid 1px;
+    border: solid 1px;display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .textoConsultor {
@@ -23,7 +25,7 @@
 
 .iconUserHome {
     font-size: 100px;
-    margin: 140px 0 40px;
+    margin-bottom: 20px;
     text-decoration: none;
     color: #000000b3;
 }

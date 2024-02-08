@@ -6,16 +6,16 @@ import AuthService from '../../services/authService';
 import { useNavigate } from 'react-router-dom';
 
 export default function Login() {
-    const [username , setUsuario] = useState('');
+    const [username, setUsuario] = useState('');
     const [password, setSenha] = useState('');
     const authService = AuthService();
     const navigate = useNavigate();
 
     useEffect(() => {
         if (authService.isAuthenticated()) {
-          navigate('/home');
+            navigate('/home');
         }
-      }, []);
+    }, []);
 
     const handleLogin = async () => {
         try {
@@ -38,7 +38,7 @@ export default function Login() {
         <div className='app'>
             <img src={Logo} alt="Auto Planos" />
             <div className='main'>
-            <div className='caixaInput'>
+                <div className='caixaInput'>
                     <FaUser className='icon user' />
                     <input className='cpf' type="text" placeholder='Usuário:' value={username} onChange={usuarioOnChange} />
                 </div>
@@ -46,8 +46,7 @@ export default function Login() {
                     <FaLock className='lock' />
                     <input className='senha' type="password" placeholder='Senha:' value={password} onChange={senhaOnChange} />
                 </div>
-                <button className='botao-login' onClick={handleLogin}>LOGIN</button>
-
+                <button type='submit' className='botao-login' onClick={handleLogin}>LOGIN</button>
             </div>
         </div>
     )

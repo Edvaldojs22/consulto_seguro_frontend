@@ -108,6 +108,76 @@ export const listaContratos = [
     descontoMensalidade: "6,00",
     valorMensalidade: "91,00",
   },
+  {
+    id: 7,
+    vendedor: "LEANDRO",
+    regional: "AG - REGIONAL LEANDRO",
+    inicioContrato: "12/07/2024",
+    renovarContrato: "12/07/2025",
+    tipoContrato: "FILIAÇÃO",
+    associado: "MARCELO SILVA - 77889900112",
+    contrato: "STU3456 - R$ 18.000,00",
+    plano: "AG - MOTOCICLETA PLANO BÁSICO 07 - 2022 De R$ 20.000,00",
+    diaVencimento: "15",
+    modeloFinanceiro: "CARNÊ",
+    valorPlano: "75,00",
+    corbeturasAdicionais: "5,00",
+    descontoMensalidade: "2,00",
+    valorMensalidade: "78,00"
+  },
+  {
+    id: 8,
+    vendedor: "LEANDRO",
+    regional: "AG - REGIONAL LEANDRO",
+    inicioContrato: "25/08/2024",
+    renovarContrato: "25/08/2025",
+    tipoContrato: "FILIAÇÃO",
+    associado: "ANA LIMA - 33445566778",
+    contrato: "VWX7890 - R$ 15.600,00",
+    plano: "AG - MOTOCICLETA PLANO INTERMEDIÁRIO 10 - 2022 De R$ 17.000,00",
+    diaVencimento: "05",
+    modeloFinanceiro: "CARNÊ",
+    valorPlano: "85,00",
+    corbeturasAdicionais: "9,00",
+    descontoMensalidade: "4,50",
+    valorMensalidade: "89,50"
+  },
+  {
+    id: 9,
+    vendedor: "LEANDRO",
+    regional: "AG - REGIONAL LEANDRO",
+    inicioContrato: "03/09/2024",
+    renovarContrato: "03/09/2025",
+    tipoContrato: "FILIAÇÃO",
+    associado: "LUCAS MARTINS - 55667788990",
+    contrato: "YZA1234 - R$ 21.300,00",
+    plano: "AG - MOTOCICLETA PLANO PREMIUM 20 - 2022 De R$ 24.000,00",
+    diaVencimento: "25",
+    modeloFinanceiro: "CARNÊ",
+    valorPlano: "100,00",
+    corbeturasAdicionais: "15,00",
+    descontoMensalidade: "7,00",
+    valorMensalidade: "108,00"
+  },
+  {
+    id: 10,
+    vendedor: "LEANDRO",
+    regional: "AG - REGIONAL LEANDRO",
+    inicioContrato: "18/10/2024",
+    renovarContrato: "18/10/2025",
+    tipoContrato: "FILIAÇÃO",
+    associado: "FERNANDA OLIVEIRA - 99887766554",
+    contrato: "BCD2345 - R$ 17.400,00",
+    plano: "AG - MOTOCICLETA PLANO INTERMEDIÁRIO 12 - 2022 De R$ 19.000,00",
+    diaVencimento: "10",
+    modeloFinanceiro: "CARNÊ",
+    valorPlano: "90,00",
+    corbeturasAdicionais: "8,00",
+    descontoMensalidade: "4,00",
+    valorMensalidade: "94,00"
+  }
+  
+  
 ];
 
 export default function Contratos() {
@@ -166,11 +236,7 @@ export default function Contratos() {
           </div>
         </div>
 
-        <div className="caixa-eventos">
-          <p>EFETIVADO</p>
-          <p>PENDENTE</p>
-          <p>CANCELADO</p>
-        </div>
+       
       </div>
     </Layout>
   );
