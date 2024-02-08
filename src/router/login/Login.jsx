@@ -13,7 +13,7 @@ export default function Login() {
 
     useEffect(() => {
         if (authService.isAuthenticated()) {
-          navigate('/associados');
+          navigate('/home');
         }
       }, []);
 
