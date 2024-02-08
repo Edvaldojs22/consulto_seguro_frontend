@@ -1,20 +1,12 @@
-import Menu from "../menu/Menu"
-import { FaCircleUser } from "react-icons/fa6";
-import AuthService from "../../services/authService"
-import "./header.css"
+import Menu from "../menu/Menu";
+import "./header.css";
 
-export default function Header(){
-    const authService = AuthService();
-    return (
-        <div>
-
+export default function Header() {
+  return (
+    <div>
+      <header>
         <Menu />
-            <header>
-                <div className='painel-icon'>
-                    <FaCircleUser className='icon-user' />
-                    <p>{authService.getUsuario()}</p>
-                </div>
-            </header>
-        </div>
-    )
+      </header>
+    </div>
+  );
 }

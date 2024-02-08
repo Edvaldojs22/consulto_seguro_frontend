@@ -153,7 +153,7 @@ export default function NovoVeiculo() {
               />
             </div>
 
-            <label htmlFor="campoObservacao">Observação:"</label>
+            <label htmlFor="campoObservacao">Observação:</label>
             <textarea name="campoObservacao" id="campoObservacao"></textarea>
           </section>
 

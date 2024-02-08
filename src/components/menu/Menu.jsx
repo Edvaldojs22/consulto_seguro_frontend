@@ -64,7 +64,7 @@ export default function Menu() {
                                 <p>Início</p>
                             </div>
 
-                            <Link to="/consulto_seguro/home" className="link">
+                            <Link to="/home" className="link">
                                 <IoIosArrowForward className="iconArroy" />
                             </Link>
 
@@ -77,7 +77,7 @@ export default function Menu() {
                                 <p>Usuário</p>
                             </div>
 
-                            <Link to="/consulto_seguro/associados" className="link">
+                            <Link to="/associados" className="link">
                                 <IoIosArrowForward className="iconArroy" />
                             </Link>
 
@@ -91,7 +91,7 @@ export default function Menu() {
                                 <p>Associados</p>
                             </div>
 
-                            <Link to="/consulto_seguro/associados" className="link">
+                            <Link to="/associados" className="link">
                                 <IoIosArrowForward className="iconArroy" />
                             </Link>
 
@@ -104,7 +104,7 @@ export default function Menu() {
                                 <p>Veículos</p>
                             </div>
 
-                            <Link to="/consulto_seguro/veiculos" className="link">
+                            <Link to="/veiculos" className="link">
                                 <IoIosArrowForward className="iconArroy" />
                             </Link>
 
@@ -117,7 +117,7 @@ export default function Menu() {
                                 <p className="contrato">Contratos</p>
                             </div>
 
-                            <Link to="/consulto_seguro/contratos" className="link">
+                            <Link to="/contratos" className="link">
                                 <IoIosArrowForward className="iconArroy" />
                             </Link>
 
@@ -130,7 +130,7 @@ export default function Menu() {
                                 <p>Mensagem Personalizada</p>
                             </div>
 
-                            <Link to="/consulto_seguro/Mensagem" className="link">
+                            <Link to="/mensagem" className="link">
                                 <IoIosArrowForward className="iconArroy" />
 
                             </Link>

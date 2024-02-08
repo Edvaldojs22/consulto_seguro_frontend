@@ -10,6 +10,8 @@ import AddContrato from "./contratos/addContrato/AddContrato"
 import VeiculosInfo from "./veiculos/veiculosInfo/VeiculoInfo"
 import NovoVeiculo from "./veiculos/addVeiculo/NovoVeiculo"
 import PrivateRoute from './privateRouter';
+import Mensagem from './mensagem/Mesagem.jsx';
+import Home from './home/Home.jsx'
 
 const Rotas = () => (
   <BrowserRouter>
@@ -24,6 +26,8 @@ const Rotas = () => (
       <Route path="/contratos" element={<PrivateRoute> <Contratos/> </PrivateRoute>} />
       <Route path="/contratos/:id" element={<PrivateRoute> <ContratosInfo/> </PrivateRoute>} />
       <Route path="/contratos/novoContrato" element={<PrivateRoute> <AddContrato/> </PrivateRoute>} />
+      <Route path="/mensagem" element={<PrivateRoute> <Mensagem/> </PrivateRoute>} />
+      <Route path="/home" element={<PrivateRoute> <Home/> </PrivateRoute>} />
     </Routes>
   </BrowserRouter>
 );

@@ -4,7 +4,7 @@ import axios from "axios";
 import { jwtDecode } from "jwt-decode";
 
 const AuthService = () => {
-  const baseUrl = "http://localhost:8080/api"; // Altere para a sua URL base
+  const baseUrl = "http://52.207.209.25:8080/api"; // Altere para a sua URL base
   const [currentUser, setCurrentUser] = useState(
     JSON.parse(localStorage.getItem("currentUser")) || null
   );
