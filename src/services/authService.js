@@ -19,7 +19,7 @@ const AuthService = () => {
       const user = response.data;
       localStorage.setItem("currentUser", JSON.stringify(user));
       setCurrentUser(user);
-      navigate("/associados");
+      navigate("/home");
       return user;
     } catch (error) {
       console.error("Erro ao fazer login:", error);
