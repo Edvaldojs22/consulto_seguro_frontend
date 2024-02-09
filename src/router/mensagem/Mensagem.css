@@ -1,6 +1,6 @@
 .painelMensagem {
-    height: 100vh;
     font-family: sans-serif;
+  
 }
 
 .p-Inpunt {
@@ -49,12 +49,13 @@
     border: none;
     border-bottom: solid 1px #000000;
     background-color: #CAC6C6;
+    
    
 }
 
 .pesquisaAssociado {
     text-align: center;
-    height: 300px;
+    height: 260px;
     overflow-y: auto;
     display: flex;
     justify-content: center;
@@ -111,7 +112,7 @@
 }
 
 .painelEnvioMensagem{
-    margin-top: 60px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -126,7 +127,8 @@
 }
 
 .painelEnvioMensagem textarea{
-    height: 180px;
+    height: 140px;
+    text-align: start;
 }
 
 .painelEnvioMensagem button{

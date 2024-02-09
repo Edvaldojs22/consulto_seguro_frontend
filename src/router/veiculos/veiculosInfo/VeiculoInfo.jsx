@@ -20,7 +20,7 @@ export default function VeiculoInfo() {
   );
 
   return (
-    <Layout>
+   
       <div className="caixa">
         <img src={LogoCart} alt="" />
         <div className="caixaInfos">
@@ -120,6 +120,6 @@ export default function VeiculoInfo() {
           </Link>
         </div>
       </div>
-    </Layout>
+    
   );
 }

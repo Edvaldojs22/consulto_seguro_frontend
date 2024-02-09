@@ -5,6 +5,7 @@ import "./ContratoInfo.css";
 import { IoIosArrowBack } from "react-icons/io";
 import { useState } from "react";
 import Layout from "../../../components/layout.jsx";
+import RodaPe from "../../../components/rodaPe/RodaPe.jsx";
 
 export default function ContratosInfo() {
   const [mostraBotao, setMostraBotao] = useState("false");
@@ -19,7 +20,7 @@ export default function ContratosInfo() {
   );
 
   return (
-    <Layout>
+    
       <div className="caixaContratos">
         <IoDocumentText className="iconDocument" />
         <div className="caixaInfosContratos">
@@ -122,7 +123,8 @@ export default function ContratosInfo() {
             <IoIosArrowBack className="arrowVolta" />
           </Link>
         </div>
+
       </div>
-    </Layout>
+    
   );
 }

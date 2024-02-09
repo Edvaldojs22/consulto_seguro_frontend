@@ -1,5 +1,5 @@
 .caixa-listaVeiculos {
-    border-bottom: 1px solid #0118228f;
+    border-bottom: 1px solid #ffffff8f;
     font-family: sans-serif;
     cursor: pointer;
     display: block;
@@ -7,9 +7,11 @@
     color: aliceblue;
     font-size: 12px;
     font-weight: 600;
-    padding: 8px;
     position: relative;
     background-color: #ACACAC5c;
+    height: 90px;
+    display: flex;
+    align-items: center;
 }
 .associados span{
     color: black;
@@ -30,44 +32,49 @@
 }
 
 .icon-cart {
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translate(-50%);
-    width: 60px;
+    font-size: 50px;
     display: inline-block;
+    margin: 10px 15px 0 10px;
+    color: black;
     
 }
 
-.nome-placa {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin: 45px 0 20px 0;
-}
-
-.nome-placa p{
-    font-size: 14px;
-    color: #204285;
-}
-.nome-placa span{
-    font-size: 15px;
-}
-
-.nome-placa p {
+.nome-proprietario{
     display: inline-block;
+    color: black;
+    font-size: 13px;
+    width: 180px;
+    position: relative;
 }
 
-.nome-placa p:first-child {
-    margin-right: 10px;
+.nome-proprietario span{
+    font-size: 13px;
 }
 
-.cor {
-    text-align: center;
-    font-size: 14px;
-    color: #204285;
+.nome-proprietario p:nth-child(1){
+    font-size: 16px;
+    margin-bottom:10px ;
 }
 
-.cor span {
+.placa{
+    color: black;
+    position: absolute;
+    right: -70px;
+    top: 0;
+}
+
+.placa span{
     font-size: 15px;
 }
+@media screen and (min-width: 700px) {
+
+    .nome-proprietario{
+        width: 300px;
+    }
+
+    .nome-proprietario span{
+        font-size: 14px;
+    }
+
+}
+

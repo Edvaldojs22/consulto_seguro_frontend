@@ -28,7 +28,7 @@ export default function NovoAssociado() {
   };
 
   return (
-    <Layout>
+    
       <div className="caixaForm">
         <form className="formAssociado">
           <FaCircleUser className="userAdd" />
@@ -215,6 +215,6 @@ export default function NovoAssociado() {
           </button>
         </form>
       </div>
-    </Layout>
+    
   );
 }

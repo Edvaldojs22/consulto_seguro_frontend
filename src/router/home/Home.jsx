@@ -3,7 +3,7 @@ import { IoChatbubbleEllipsesSharp } from "react-icons/io5";
 import "./Home.css"
 import { FaCarSide, FaFileContract, FaUserCircle, FaUsers } from "react-icons/fa";
 import { listaCliente } from "../associados/associado/Associados";
-import { listaContratos } from "../contratos/contrato/Contratos"; 
+import { listaContratos } from "../contratos/contrato/Contratos";
 import { listaVeiculos } from "../veiculos/veiculos/Veiculos";
 import Menu from "../../components/menu/Menu";
 import RodaPe from "../../components/rodaPe/RodaPe";
@@ -35,7 +35,7 @@ export default function Home() {
                     </div>
 
                     <div>
-                        <Link className="circleIcon"  to="/veiculos">
+                        <Link className="circleIcon" to="/veiculos">
                             <FaCarSide />
                             <div>
                                 {veiculoQuantidade.length}
@@ -56,7 +56,7 @@ export default function Home() {
 
                 <div >
 
-                    <Link className="caixaMensagem"  to="/mensagem">
+                    <Link className="caixaMensagem" to="/mensagem">
                         <IoChatbubbleEllipsesSharp className="iconMSG" />
                         <p>Mensagem Personalizada</p>
                     </Link>

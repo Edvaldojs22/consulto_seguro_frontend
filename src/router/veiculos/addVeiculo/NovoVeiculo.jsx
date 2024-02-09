@@ -1,11 +1,11 @@
 import "./NovoVeiculo.css";
 import LogoCart from "../../../assets/img/car.png";
 import { MdOutlineAttachMoney } from "react-icons/md";
-import Layout from "../../../components/layout.jsx";
+
 
 export default function NovoVeiculo() {
   return (
-    <Layout>
+  
       <div className="caixaForm">
         <form className="formVeiculo">
           <img src={LogoCart} alt="" />
@@ -160,6 +160,6 @@ export default function NovoVeiculo() {
           <button type="submit">Salvar</button>
         </form>
       </div>
-    </Layout>
+    
   );
 }

@@ -20,8 +20,8 @@
 
 .caixaInfosContratos {
     width: calc(100% - 5%);
-    max-width: 700px;
-    background-color: #204285;
+    max-width: 800px;
+    background-color:  #acacac5c;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -30,7 +30,8 @@
     gap: 10px;
     position: relative;
     font-size: 12px;
-    color: white;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
 }
 
 .caixaInfosContratos h1 {

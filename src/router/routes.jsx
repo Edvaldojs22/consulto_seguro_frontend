@@ -17,17 +17,17 @@ const Rotas = () => (
   <BrowserRouter>
     <Routes>
       <Route exact path="/" element={<Login />} />
-      <Route path="/associados" element={<PrivateRoute> <Associados/> </PrivateRoute>} />
-      <Route path="/associados/:id" element={<PrivateRoute> <AssociadosInfo/> </PrivateRoute>} />
-      <Route path="/associados/novoAssociado" element={<PrivateRoute> <NovoAssociado/> </PrivateRoute>} />
-      <Route path="/veiculos" element={<PrivateRoute> <Veiculos/> </PrivateRoute>} />
-      <Route path="/veiculos/:id" element={<PrivateRoute> <VeiculosInfo/> </PrivateRoute>} />
-      <Route path="/veiculos/novoContrato" element={<PrivateRoute> <NovoVeiculo/> </PrivateRoute>} />
-      <Route path="/contratos" element={<PrivateRoute> <Contratos/> </PrivateRoute>} />
-      <Route path="/contratos/:id" element={<PrivateRoute> <ContratosInfo/> </PrivateRoute>} />
-      <Route path="/contratos/novoContrato" element={<PrivateRoute> <AddContrato/> </PrivateRoute>} />
-      <Route path="/mensagem" element={<PrivateRoute> <Mensagem/> </PrivateRoute>} />
-      <Route path="/home" element={<PrivateRoute> <Home/> </PrivateRoute>} />
+      <Route path="/associados" element={<PrivateRoute> <Associados /> </PrivateRoute>} />
+      <Route path="/associados/:id" element={<PrivateRoute> <AssociadosInfo /> </PrivateRoute>} />
+      <Route path="/associados/novoAssociado" element={<PrivateRoute> <NovoAssociado /> </PrivateRoute>} />
+      <Route path="/veiculos" element={<PrivateRoute> <Veiculos /> </PrivateRoute>} />
+      <Route path="/veiculos/:id" element={<PrivateRoute> <VeiculosInfo /> </PrivateRoute>} />
+      <Route path="/veiculos/novoVeiculos" element={<PrivateRoute> <NovoVeiculo /> </PrivateRoute>} />
+      <Route path="/contratos" element={<PrivateRoute> <Contratos /> </PrivateRoute>} />
+      <Route path="/contratos/:id" element={<PrivateRoute> <ContratosInfo /> </PrivateRoute>} />
+      <Route path="/contratos/novoContrato" element={<PrivateRoute> <AddContrato /> </PrivateRoute>} />
+      <Route path="/mensagem" element={<PrivateRoute> <Mensagem /> </PrivateRoute>} />
+      <Route path="/home" element={<PrivateRoute> <Home /> </PrivateRoute>} />
     </Routes>
   </BrowserRouter>
 );

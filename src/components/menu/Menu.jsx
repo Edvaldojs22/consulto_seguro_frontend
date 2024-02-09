@@ -151,7 +151,7 @@ export default function Menu() {
                         </div>
                     </div>
 
-                    <div className="caixaSai">
+                    <div className="caixaSair" onClick={logout}>
                         <BiLogOutCircle className="iconsair"/>
                         <p>Sair</p>
                     </div>

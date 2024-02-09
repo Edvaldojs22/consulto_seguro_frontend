@@ -1,10 +1,11 @@
 .painelMenu {
     background-color: rgb(94, 255, 0);
+    z-index: 2;
 }
 
 
 .imgIcon {
-    border-bottom: solid 1px black;
+    border-bottom: solid 1px rgb(0, 0, 0);
 }
 
 .icon-menu {
@@ -22,7 +23,7 @@
     position: absolute;
     top: 15px;
     left: 0;
-    border-bottom: solid 1px #000000b3;
+    border-bottom: solid 1px #00000026;
     width: 100%;
     height: 80px;
 }
@@ -54,12 +55,6 @@
 }
 
 
-@media screen and (min-width:600px) {
-    .caixa-menuAberta{
-        width: 500px;
-        border-left: solid 1px #000000b3;
-    }
-}
 
 .iconsPage {
     width: 360px;
@@ -71,7 +66,7 @@
 }
 
 .caixaLink {
-    border-bottom: solid 1px #000000b3;
+    border-bottom: solid 1px #00000072;
     display: flex;
     justify-content: space-between;
     height: 50px;
@@ -118,7 +113,7 @@
     font-weight: bold;
 }
 
-.caixaSai {
+.caixaSair {
     position: absolute;
     display: flex;
     align-items: center;
@@ -126,9 +121,10 @@
     color: #000000b3;
 }
 
-.caixaSai p {
+.caixaSair p {
     font-size: 16px;
     margin-top: 5px;
+    color: #000000b3;
 
 }
 
@@ -144,4 +140,12 @@
     border-radius: 50%;
     transform: scale(1.3);
     transform: rotate(90deg);
+}
+
+
+@media screen and (min-width:600px) {
+    .caixa-menuAberta{
+        width: 500px;
+        border-left: solid 1px #000000b3;
+    }
 }
