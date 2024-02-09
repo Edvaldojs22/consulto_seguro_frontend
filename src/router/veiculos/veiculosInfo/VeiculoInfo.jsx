@@ -5,6 +5,7 @@ import "./VeiculoInfo.css";
 import { IoIosArrowBack } from "react-icons/io";
 import { useState } from "react";
 import Layout from "../../../components/layout.jsx";
+import Menu from "../../../components/menu/Menu.jsx";
 
 export default function VeiculoInfo() {
   const [mostraBotao, setMostraBotao] = useState("false");
@@ -22,6 +23,7 @@ export default function VeiculoInfo() {
   return (
    
       <div className="caixa">
+        <Menu />
         <img src={LogoCart} alt="" />
         <div className="caixaInfos">
           <h1>Dados Básicos</h1>

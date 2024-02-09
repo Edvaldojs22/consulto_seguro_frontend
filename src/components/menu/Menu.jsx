@@ -49,7 +49,7 @@ export default function Menu() {
 
             <nav className={caixaMenuClasses}>
                 <div className="caixaImg">
-                    <img className="imgMenuAutoPlanos" src={LogoAutoPlanos} alt="" />
+                    <img id="imgMenuAutoPlanos" src={LogoAutoPlanos} alt="" />
                 </div>
 
 

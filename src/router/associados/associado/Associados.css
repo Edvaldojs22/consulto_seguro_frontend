@@ -103,34 +103,6 @@ header p {
     margin: 20px auto 0;
 }
 
-@media screen and (min-height:700px) {
-    .caixa-lista-associados{
-        height:500px ;
-    }
-}
-
-
-@media screen and (min-height:900px) {
-    .caixa-lista-associados{
-        height:930px ;
-    }
-}
-
-@media screen and (min-height:1000px) {
-    .caixa-lista-associados{
-        height:800px ;
-    }
-}
-
-@media screen and (min-height:1200px) {
-    .caixa-lista-associados{
-        height:950px ;
-    }
-}
-
-
-
-
 
 .lista-associados {
     width: calc(100%);
@@ -190,3 +162,35 @@ header p {
     width: 15px;
     margin-right: 2px;
 }
+
+@media screen and (min-height:700px) {
+    .caixa-lista-associados{
+        height:500px ;
+    }
+}
+
+@media screen and (min-height:800px) {
+    .caixa-lista-associados{
+        height:590px ;
+    }
+}
+
+
+@media screen and (min-height:900px) {
+    .caixa-lista-associados{
+        height:650px ;
+    }
+}
+
+@media screen and (min-height:1000px) {
+    .caixa-lista-associados{
+        height:800px ;
+    }
+}
+
+@media screen and (min-height:1200px) {
+    .caixa-lista-associados{
+        height:950px ;
+    }
+}
+

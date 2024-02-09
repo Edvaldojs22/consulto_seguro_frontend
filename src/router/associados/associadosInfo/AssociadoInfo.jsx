@@ -5,6 +5,7 @@ import { FaCircleUser } from "react-icons/fa6";
 import { IoIosArrowBack } from "react-icons/io";
 import { useState } from "react";
 import Layout from "../../../components/layout.jsx";
+import Menu from "../../../components/menu/Menu.jsx";
 
 export default function AssociadosInfo() {
   const [mostraBotao, setMostraBotao] = useState("false");
@@ -21,6 +22,7 @@ export default function AssociadosInfo() {
   return (
     
       <div className="caixa">
+        <Menu />
         <FaCircleUser className="iconUserInfo" />
         <div className="caixaInfos">
           <h1>Dados Básicos</h1>

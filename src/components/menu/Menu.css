@@ -28,13 +28,13 @@
     height: 80px;
 }
 
-.imgMenuAutoPlanos {
+#imgMenuAutoPlanos {
     width: 180px;
     margin-left: 10px;
 }
 
 .caixa-menu {
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
     width: 0;
@@ -43,7 +43,6 @@
     z-index: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 30px;
     overflow: hidden;
@@ -111,6 +110,7 @@
     position: relative;
     font-family: sans-serif;
     font-weight: bold;
+    margin-top: 45px;
 }
 
 .caixaSair {

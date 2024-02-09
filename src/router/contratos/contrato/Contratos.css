@@ -8,30 +8,6 @@
     margin: 0 auto;
 }
 
-@media screen and (min-height:700px) {
-    .caixa-lista-contratos{
-        height:500px ;
-    }
-}
-
-
-@media screen and (min-height:900px) {
-    .caixa-lista-contratos{
-        height:930px ;
-    }
-}
-
-@media screen and (min-height:1000px) {
-    .caixa-lista-contratos{
-        height:800px ;
-    }
-}
-
-@media screen and (min-height:1200px) {
-    .caixa-lista-contratos{
-        height:950px ;
-    }
-}
 
 
 
@@ -77,4 +53,35 @@
 }
 
 
+@media screen and (min-height:700px) {
+    .caixa-lista-contratos{
+        height:500px ;
+    }
+}
+
+@media screen and (min-height:800px) {
+    .caixa-lista-contratos{
+        height:590px ;
+    }
+}
+
+
+
+@media screen and (min-height:900px) {
+    .caixa-lista-contratos{
+        height:650px ;
+    }
+}
+
+@media screen and (min-height:1000px) {
+    .caixa-lista-contratos{
+        height:800px ;
+    }
+}
+
+@media screen and (min-height:1200px) {
+    .caixa-lista-contratos{
+        height:950px ;
+    }
+}
 
