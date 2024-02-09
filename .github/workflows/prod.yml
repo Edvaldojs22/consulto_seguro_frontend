@@ -2,9 +2,9 @@ name: Deploy app to S3
 
 on:
   push:
-    branches: [ "integracao_api" ]
+    branches: [ "front-end" ]
   pull_request:
-    branches: [ "integracao_api" ]
+    branches: [ "front-end" ]
 
 jobs:
   build:
