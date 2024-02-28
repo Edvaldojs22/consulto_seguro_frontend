@@ -1,12 +1,36 @@
+.painelMenu {
+    background-color: rgb(94, 255, 0);
+    z-index: 2;
+}
+
+
+.imgIcon {
+    border-bottom: solid 1px rgb(0, 0, 0);
+}
 
 .icon-menu {
     position: fixed;
-    font-size: 50px;
+    font-size: 45px;
     right: 10px;
     top: 13px;
     cursor: pointer;
     z-index: 2;
-    color: rgb(255, 255, 255);
+    color: #000000;
+
+}
+
+.caixaImg {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    border-bottom: solid 1px #00000026;
+    width: 100%;
+    height: 80px;
+}
+
+.imgMenuAutoPlanos {
+    width: 180px;
+    margin-left: 10px;
 }
 
 .caixa-menu {
@@ -14,8 +38,8 @@
     right: 0;
     top: 0;
     width: 0;
-    height:0;
-    background-color: rgba(9, 9, 9, 0.727);
+    height: 100vh;
+    background-color: white;
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -23,45 +47,105 @@
     align-items: center;
     gap: 30px;
     overflow: hidden;
-    transition: all 0.1s;
-    backdrop-filter: blur(10px);
+    transition: all 0.5s;
 }
 
-.caixa-menuAberta{
+.caixa-menuAberta {
     width: 100%;
-    height: 100vh;
 }
+
+
+
+.iconsPage {
+    width: 360px;
+    height: 500px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.caixaLink {
+    border-bottom: solid 1px #00000072;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.caixaLink div {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    color: #000000b3;
+}
+
+.caixaLink p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000b3;
+    margin-left: 13px;
+}
+
 
 .link {
     text-decoration: none;
-    width: calc(100% - 60%);
-    max-width: 200px;
-    height: 50px;
-    background-color: #d31e25;
-    color: #F8F4F4;
+    color: #000000b3;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 40px;
+}
+
+.iconArroy {
+    font-size: 22px;
+}
+
+.iconArroy:hover {
+    background-color: rgba(128, 128, 128, 0.278);
+    border-radius: 50%;
+    transform: scale(1.3);
+}
+
+.caixaIcons {
+    position: relative;
     font-family: sans-serif;
+    font-weight: bold;
+}
+
+.caixaSair {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: -50px;
+    color: #000000b3;
+}
+
+.caixaSair p {
+    font-size: 16px;
+    margin-top: 5px;
+    color: #000000b3;
+
+}
+
+.iconsair {
+    margin-right: 5px;
+    transform: rotate(90deg);
+    font-size: 40px;
     cursor: pointer;
-    border-radius: 7px;
-    color: #f2f2f2;
-    font-weight: 800;
-    font-size: 18px;
-    font-weight: 700;
-    transition: all 0.1s;
 }
 
-.link:hover{
-    background-color: #204285;
-    transform: scale(0.9);
+.iconsair:hover{
+    background-color: rgba(128, 128, 128, 0.278);
+    border-radius: 50%;
+    transform: scale(1.3);
+    transform: rotate(90deg);
 }
 
-.caixa-menu p:hover{
-    background-color: #027aae;
-}
 
-.caixa-menu p:active{
-    transform: scale(0.97);
-    background-color: #027aae;
+@media screen and (min-width:600px) {
+    .caixa-menuAberta{
+        width: 500px;
+        border-left: solid 1px #000000b3;
+    }
 }

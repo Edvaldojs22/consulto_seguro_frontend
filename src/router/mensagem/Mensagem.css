@@ -1,0 +1,150 @@
+.painelMensagem {
+    font-family: sans-serif;
+  
+}
+
+.p-Inpunt {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    padding-top: 5px;
+    background-color: white;
+}
+
+.iconsPosition {
+    width: calc(100% - 20%);
+    max-width: 500px;
+    position: relative;
+    margin: 0 auto;
+
+}
+
+.clienteNumber {
+    position: absolute;
+    font-size: 25px;
+    font-weight: bold;
+    left: 10px;
+    bottom: 10px;
+    z-index: 1;
+    color: #000000;
+}
+
+.caixaCheckGeral {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    right: 7px;
+    top: 0px;
+}
+
+
+.iconsPosition input {
+    width: 100%;
+    max-width: 500px;
+    height: 50px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-bottom: solid 1px #000000;
+    background-color: #CAC6C6;
+    
+   
+}
+
+.pesquisaAssociado {
+    text-align: center;
+    height: 260px;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+ 
+}
+
+.pesquisaAssociado p {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(4, 0, 0);
+    height: 50px;
+    font-family: sans-serif;
+    padding: 10px 0;
+}
+
+.pesquisaAssociado input::placeholder {
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.681);
+}
+
+.associadoPesquisa {
+    width: calc(100% - 20%);
+    max-width: 500px;
+    margin-top: 100px;
+    height: 400px;
+}
+
+.associadoPesquisa p {
+    color: rgb(43, 43, 43);
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+.p-check {
+    background-color: #ACACAC5c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid #ffffff;
+}
+
+.p-check input {
+    position: absolute;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.painelEnvioMensagem{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.painelEnvioMensagem p{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.painelEnvioMensagem textarea{
+    height: 140px;
+    text-align: start;
+}
+
+.painelEnvioMensagem button{
+    padding: 10px 30px;
+    margin-top: 10px;
+    border: none;
+    background-color: #d31e25;
+    color: white;
+    border-radius: 7px;
+    box-shadow: 0 3px 7px 0 black;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+ .painelEnvioMensagem button:hover{
+    transform: scale(1.2);
+ }
+

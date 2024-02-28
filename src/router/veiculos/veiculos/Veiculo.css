@@ -1,5 +1,5 @@
 .caixa-listaVeiculos {
-    border-bottom: 1px solid #0118228f;
+    border-bottom: 1px solid #ffffff8f;
     font-family: sans-serif;
     cursor: pointer;
     display: block;
@@ -7,10 +7,16 @@
     color: aliceblue;
     font-size: 12px;
     font-weight: 600;
-    padding: 8px;
     position: relative;
-    background-color: #d31e25;
+    background-color: #ACACAC5c;
+    height: 90px;
+    display: flex;
+    align-items: center;
 }
+.associados span{
+    color: black;
+}
+
 
 .botao-pesquisa img{
     width: 40px;
@@ -18,52 +24,57 @@
     top: 0;
     right: 0;
     padding-right: 5px;
-    background-color: #204285;
     height: 50px;
     width: 60px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 
 }
 
 .icon-cart {
+    font-size: 50px;
+    display: inline-block;
+    margin: 10px 15px 0 10px;
+    color: black;
+    
+}
+
+.nome-proprietario{
+    display: inline-block;
+    color: black;
+    font-size: 13px;
+    width: 180px;
+    position: relative;
+}
+
+.nome-proprietario span{
+    font-size: 13px;
+}
+
+.nome-proprietario p:nth-child(1){
+    font-size: 16px;
+    margin-bottom:10px ;
+}
+
+.placa{
+    color: black;
     position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translate(-50%);
-    width: 60px;
-    display: inline-block;
-    
+    right: -70px;
+    top: 0;
 }
 
-.nome-placa {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin: 45px 0 20px 0;
-}
-
-.nome-placa p{
-    font-size: 14px;
-}
-.nome-placa span{
-    font-size: 15px;
-    
-}
-
-.nome-placa p {
-    display: inline-block;
-}
-
-.nome-placa p:first-child {
-    margin-right: 10px;
-}
-
-.cor {
-    text-align: center;
-    font-size: 14px;
-}
-
-.cor span {
+.placa span{
     font-size: 15px;
 }
+@media screen and (min-width: 700px) {
+
+    .nome-proprietario{
+        width: 300px;
+    }
+
+    .nome-proprietario span{
+        font-size: 14px;
+    }
+
+}
+

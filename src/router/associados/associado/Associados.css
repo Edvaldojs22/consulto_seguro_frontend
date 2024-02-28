@@ -2,8 +2,7 @@
     position: relative;
 }
 header {
-    height: 90px;
-    background-color: #204285;
+    height: 70px;
     display: flex;
     align-items: center;
     padding-left: 10px;
@@ -34,7 +33,7 @@ header p {
 .caixa-inpunt-pesquisa {
     width: calc(100% - 20%);
     max-width: 700px;
-    margin: 20px auto;
+    margin: 10px auto 10px;
     position: relative;
 
 }
@@ -72,21 +71,19 @@ header p {
     left: 13px;
     font-size: 26px;
     font-family: sans-serif;
-    color: #204285;
+    color: #000000;
     font-weight: 700;
 }
 
 .icon-search {
- 
     padding-right: 10px;
     top: 0;
-    right: 0;
-    color:white;
-    background-color: #204285;
-    width: 70px;
+    right: 4px;
+    color:#d31e25;
+    width: 50px;
     height: 50px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     cursor: pointer;
 
 }
@@ -100,13 +97,39 @@ header p {
 .caixa-lista-associados {
     width: calc(100% - 10%);
     max-width: 1000px;
-    height: 58vh;
-    max-height: 700px;
-    min-height: 100px;
+    height: 60vh;
     overflow-y: auto;
     border-radius: 10px;
-    margin: 0 auto;
+    margin: 20px auto 0;
 }
+
+@media screen and (min-height:700px) {
+    .caixa-lista-associados{
+        height:500px ;
+    }
+}
+
+
+@media screen and (min-height:900px) {
+    .caixa-lista-associados{
+        height:930px ;
+    }
+}
+
+@media screen and (min-height:1000px) {
+    .caixa-lista-associados{
+        height:800px ;
+    }
+}
+
+@media screen and (min-height:1200px) {
+    .caixa-lista-associados{
+        height:950px ;
+    }
+}
+
+
+
 
 
 .lista-associados {
@@ -115,19 +138,17 @@ header p {
 }
 
 .caixa-listaAssociados {
-    border-bottom: 1px solid #fdfeff8f;
+    border-bottom: 1px solid #ffffff8f;
     padding: 10px 20px 10px 10px;
     font-family: sans-serif;
     cursor: pointer;
     display: block;
     text-decoration: none;
-    color: aliceblue;
+    color: #000000;
     font-size: 11px;
-    font-weight: 600;
-    background-color: #d31e25;
-    
+    font-weight: bold;
+    background-color: #acacac5c ;
 }
-
 
 .iconUser-cliente {
     display: inline-block;
@@ -153,7 +174,7 @@ header p {
     display: inline-block;
     font-size: 11px;
     font-weight: 600;
-    color: aliceblue;
+    color: #000000;
 }
 
 .fone-vencimento p:first-child {
@@ -169,4 +190,3 @@ header p {
     width: 15px;
     margin-right: 2px;
 }
-

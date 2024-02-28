@@ -1,70 +1,53 @@
 import './Login.css';
-import Logo from '../../assets/img/autoPlanos.png'
+import Logo from '../../assets/img/autoPlanos.png';
 import { FaUser, FaLock } from "react-icons/fa";
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-
+import { useState, useEffect } from 'react';
+import AuthService from '../../services/authService';
+import { useNavigate } from 'react-router-dom';
 
 export default function Login() {
+    const [username, setUsuario] = useState('');
+    const [password, setSenha] = useState('');
+    const authService = AuthService();
+    const navigate = useNavigate();
 
+    useEffect(() => {
+        if (authService.isAuthenticated()) {
+            navigate('/home');
+        }
+    }, []);
 
+    const handleLogin = async () => {
+        try {
+            await authService.login(username, password);
+        } catch (error) {
+            console.error('Erro ao fazer login:', error);
+            alert('Erro ao fazer login. Verifique suas credenciais e tente novamente.');
+        }
+    }
 
-    const [usuario, setUsuario] = useState('');
-    const [senha, setSenha] = useState('');
-
-    const usuarioOnchange = (event) => {
+    const usuarioOnChange = (event) => {
         setUsuario(event.target.value);
     }
 
-    const senhaOnchange = (event) => {
+    const senhaOnChange = (event) => {
         setSenha(event.target.value);
     }
 
-
-
     return (
-
         <div className='app'>
-        
-
-            <img src={Logo} alt="" />
-
+            <img src={Logo} alt="Auto Planos" />
             <div className='main'>
-
-                <div className='caixaInpunt'>
-                    <FaUser className=' icon user' />
-                    <input className='cpf  ' type="text" placeholder='CPF:' value={usuario} onChange={usuarioOnchange} />
+                <div className='caixaInput'>
+                    <FaUser className='icon user' />
+                    <input className='cpf' type="text" placeholder='Usuário:' value={username} onChange={usuarioOnChange} />
                 </div>
-
-                <div className='caixaInpunt'>
+                <div className='caixaInput'>
                     <FaLock className='lock' />
-                    <input className='senha ' type="password" placeholder='Senha:' value={senha} onChange={senhaOnchange} />
-
-                    {/* <div className='caixa-salvar'>
-                        <div className='box'>
-                            
-                        </div>
-                        <div>
-                            <p>Lembrar</p>
-                        </div>
-                    </div> */}
-
+                    <input className='senha' type="password" placeholder='Senha:' value={password} onChange={senhaOnChange} />
                 </div>
-
-
-                <Link className='botao-login' to="/consulto_seguro/associados">
-                    <p>LOGIN</p>
-                </Link>
-
-
+                <button type='submit' className='botao-login' onClick={handleLogin}>LOGIN</button>
             </div>
-
         </div>
-
-
     )
-
-
 }
-export { Logo }
-
