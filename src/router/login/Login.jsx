@@ -4,12 +4,14 @@ import { FaUser, FaLock } from "react-icons/fa";
 import { useState, useEffect } from 'react';
 import AuthService from '../../services/authService';
 import { useNavigate } from 'react-router-dom';
+import MsgError from '../../components/popup/msgError/MsgError';
 
 export default function Login() {
     const [username, setUsuario] = useState('');
     const [password, setSenha] = useState('');
     const authService = AuthService();
     const navigate = useNavigate();
+    const [msgError, setMsgError] = useState ('');
 
     useEffect(() => {
         if (authService.isAuthenticated()) {
@@ -17,14 +19,26 @@ export default function Login() {
         }
     }, []);
 
+
+
     const handleLogin = async () => {
         try {
             await authService.login(username, password);
         } catch (error) {
             console.error('Erro ao fazer login:', error);
-            alert('Erro ao fazer login. Verifique suas credenciais e tente novamente.');
+            setMsgError(<MsgError />)
+            setTimeout (() => {
+                setMsgError('')
+            }, 10000);
+          
         }
     }
+
+    const msgErrorEsconder = () => {
+        setMsgError('')
+    }
+
+    
 
     const usuarioOnChange = (event) => {
         setUsuario(event.target.value);
@@ -35,7 +49,8 @@ export default function Login() {
     }
 
     return (
-        <div className='app'>
+        <div className='app' onClick={msgErrorEsconder}>
+            {msgError}
             <img src={Logo} alt="Auto Planos" />
             <div className='main'>
                 <div className='caixaInput'>
