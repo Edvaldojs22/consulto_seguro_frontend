@@ -1,0 +1,44 @@
+.msgPeinelVerificando {
+    position: fixed;
+    top: 5px;
+    right: 15px;
+    width: 200px;
+    border-radius: 7px;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+}
+
+.msgPeinelVerificando .icon {
+    font-size: 20px;
+    text-align: center;
+    margin: 6px 0;
+}
+
+.msgPeinelVerificando .text{
+    font-size: 18px;
+    font-family: sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.classeSucesso {
+    color: rgb(0, 166, 0);
+    border: solid 2px rgb(0, 166, 0);
+
+}
+
+.classeErro {
+    color: rgb(128, 23, 0);
+    border: solid 2px rgb(128, 23, 0);
+}
+
+
+@media screen and (max-width: 700px) {
+    .msgPeinelVerificando{
+        
+       left: 50%;
+       transform: translate(-50%);
+       
+    }
+}

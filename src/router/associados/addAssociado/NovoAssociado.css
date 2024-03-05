@@ -1,22 +1,18 @@
 .caixaForm {
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background-color: #204285;
-  
+    background-color: #ffffff;
 }
 
-.userAdd{
+.userAdd {
     font-size: 70px;
     margin: 20px auto;
     color: #d31e25;
     background-color: rgb(255, 255, 255);
     border-radius: 50%;
-    
-    
 }
-.arrow{
+
+.arrow {
     margin-bottom: 10px;
     transform: rotate(135deg);
     position: absolute;
@@ -25,72 +21,115 @@
     font-size: 18px;
 }
 
- .formAssociado{
-    margin-top: 20px;
-    margin-bottom: 20px;
+.formAssociado {
+    margin-top: 50px;
     width: calc(100% - 5%);
-    max-width: 900px;
-    background-color: #ffffff2b;
+    max-width: 1000px;
+    background-color: #13357a;
     border-radius: 10px;
     font-family: sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-  
 }
 
-
-label{
-    font-size: 18px;
-    font-weight: 600;
-    color: rgb(3, 3, 3);
-    position: relative;
-    margin-bottom: 25px;
-}
-
-.formAssociado h1{
+.formAssociado h1 {
     margin-bottom: 30px;
     color: white;
 }
 
-.dadosBasicos, .cepEndereco, .fones, .proficaoEstado{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+
+label {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(194, 194, 194);
+    display: block;
+
+    margin: 10px 0 5px;
+
+
 }
-
-
-.dataNascimento{
-    text-align: center;
-    margin-top: 20px;
-}
-
-
 
 .formAssociado input {
     background-color: transparent;
     margin-bottom: 10px;
-    width: 260px;
-    margin-right: 10px;
+    height: 30px;
+    border-radius: 6px;
     border: none;
-    border-bottom: solid 1px black;
+    background-color: rgba(214, 214, 214, 0.554);
     outline: none;
     color: white;
     font-size: 2vh;
-    text-align: center;
     font-size: 18px;
+    padding-left: 10px;
+
+}
+
+.dadosBasicos {
+    width: 100%;
+    padding: 0 50px;
+}
+
+.caixaCep,
+.caixaEndereco,
+.caixaBairro,
+.caixaCidade,
+.fone1,
+.fone2,
+.caixaResponsavel,
+.caixaCpfResponsavel,
+.caixaIndentidadeResponsavel,
+.caixaEmail,
+.caixaTelefone,
+.caixaCpf,
+.caixaIndentidade,
+.caixaOrgao,
+.caixaProfisao,
+.caixaEstadoCivil,
+.dataNascimento {
+    display: inline-block;
+}
+
+.caixaCep,
+.caixaEndereco,
+.caixaBairro,
+.fone1,
+.caixaResponsavel,
+.caixaCpfResponsavel,
+.caixaEmai,
+.caixaEstadoCivil,
+.caixaEmail,
+.caixaTelefone,
+.caixaCpf,
+.caixaIndentidade,
+.caixaProfisao {
+    margin-right: 10px;
+}
+
+.caixaCep input {
+    width: 100px;
+}
+
+.caixaCpfResponsavel input {
+    width: 180px;
+}
+
+
+.cepEnderecoBairro,
+.bairroCidade {
+    display: inline-block;
 }
 
 
 .formAssociado span {
-    font-size: 19px;
-    width: 140px;
-    color: rgb(0, 0, 0);
+    font-size: 24px;
+    color: rgb(255, 255, 255);
     margin-top: 30px;
     margin-bottom: 10px;
 }
 
-.botoesValor{
+.botoesValor {
     display: flex;
     justify-content: space-between;
     width: 220px;
@@ -124,18 +163,44 @@ label{
 }
 
 
-.dadosPessoasF, .dadosPessoasJ{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.dadosPessoasF,
+.dadosPessoasJ {
+    width: 100%;
+    padding: 0 50px;
 }
 
-.nomeResponsavel{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
+
+.caixaCpf input {
+    width: 130px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -155,8 +220,6 @@ label{
     cursor: pointer;
 }
 
-.formAssociado button:hover{
+.formAssociado button:hover {
     transform: scale(0.9);
 }
-
-
